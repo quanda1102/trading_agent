@@ -13,6 +13,7 @@ import logging
 
 from ..core.multi_agent_orchestrator import MultiAgentOrchestrator
 from ..storage import ConversationRepository
+from ..services.chat_search import ChatSearchService
 
 try:
     from ..memory.memory_manager import MemoryManager
@@ -26,10 +27,11 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api/v1", tags=["multi-agent"])
 
-# Initialize orchestrator and memory manager
+# Initialize orchestrator, memory manager, and search service
 orchestrator = MultiAgentOrchestrator()
 memory_manager = MemoryManager() if MEMORY_AVAILABLE else None
 conversation_repository = ConversationRepository()
+chat_search = ChatSearchService()
 
 
 # Request/Response Models
@@ -180,6 +182,22 @@ async def chat_endpoint(request: ChatRequest):
                 execution_log=result.get("execution_log", []),
                 status=status_label,
                 cycles_used=result.get("cycles_used", 0),
+            )
+
+            # Update session metadata (auto-generates title from first message)
+            conversation_repository.upsert_session(
+                user_id=request.user_id,
+                session_id=request.session_id
+            )
+
+            # Index conversation for semantic search
+            chat_search.index_conversation(
+                interaction_id=interaction["id"],
+                user_id=request.user_id,
+                session_id=request.session_id,
+                question=request.question,
+                answer=result.get("final_answer", ""),
+                created_at=interaction["created_at"]
             )
 
             result["interaction_id"] = interaction["id"]
@@ -416,6 +434,197 @@ async def list_agents():
             "coordination_strategy": "Task-based intelligent delegation"
         }
     }
+
+
+@router.get("/sessions")
+async def list_sessions_endpoint(
+    user_id: str = Query(..., description="User identifier"),
+    page: int = Query(1, ge=1, description="Page number (1-indexed)"),
+    page_size: int = Query(50, ge=1, le=100, description="Items per page"),
+):
+    """
+    List all chat sessions for a user (ChatGPT-like session list).
+
+    Returns sessions ordered by most recent activity with auto-generated titles.
+
+    Example:
+        GET /api/v1/sessions?user_id=user123&page=1&page_size=20
+    """
+    try:
+        sessions, total = conversation_repository.list_sessions(
+            user_id=user_id,
+            page=page,
+            page_size=page_size
+        )
+
+        return {
+            "sessions": sessions,
+            "total": total,
+            "page": page,
+            "page_size": page_size,
+            "has_more": (page * page_size) < total
+        }
+
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
+    except Exception as exc:
+        logger.error("Error listing sessions: %s", exc, exc_info=True)
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error listing sessions: {exc}"
+        )
+
+
+@router.get("/sessions/{session_id}")
+async def get_session_endpoint(
+    session_id: str,
+    user_id: str = Query(..., description="User identifier"),
+):
+    """
+    Get detailed information about a specific session.
+
+    Returns session metadata including title, message count, and timestamps.
+
+    Example:
+        GET /api/v1/sessions/session123?user_id=user123
+    """
+    try:
+        session = conversation_repository.get_session(
+            user_id=user_id,
+            session_id=session_id
+        )
+        return session
+
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc))
+    except Exception as exc:
+        logger.error("Error getting session: %s", exc, exc_info=True)
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error getting session: {exc}"
+        )
+
+
+@router.patch("/sessions/{session_id}")
+async def update_session_endpoint(
+    session_id: str,
+    user_id: str = Query(..., description="User identifier"),
+    title: str = Query(..., description="New session title"),
+):
+    """
+    Update session title (rename conversation).
+
+    Allows users to customize the auto-generated conversation title.
+
+    Example:
+        PATCH /api/v1/sessions/session123?user_id=user123&title=Bitcoin Analysis
+
+    Request body:
+        ```json
+        {
+            "title": "My Bitcoin Trading Strategy"
+        }
+        ```
+    """
+    try:
+        session = conversation_repository.update_session_title(
+            user_id=user_id,
+            session_id=session_id,
+            title=title
+        )
+        return {
+            "success": True,
+            "message": "Session title updated successfully",
+            "session": session
+        }
+
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc))
+    except Exception as exc:
+        logger.error("Error updating session: %s", exc, exc_info=True)
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error updating session: {exc}"
+        )
+
+
+@router.delete("/sessions/{session_id}")
+async def delete_session_endpoint(
+    session_id: str,
+    user_id: str = Query(..., description="User identifier"),
+):
+    """
+    Delete a session and all its conversations (ChatGPT-like delete).
+
+    This will permanently remove the session and all associated chat history.
+
+    Example:
+        DELETE /api/v1/sessions/session123?user_id=user123
+    """
+    try:
+        # Delete from database
+        conversation_repository.delete_session(
+            user_id=user_id,
+            session_id=session_id
+        )
+
+        # Delete from search index
+        chat_search.delete_conversation_index(
+            user_id=user_id,
+            session_id=session_id
+        )
+
+        return {
+            "success": True,
+            "message": f"Session {session_id} deleted successfully"
+        }
+
+    except Exception as exc:
+        logger.error("Error deleting session: %s", exc, exc_info=True)
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error deleting session: {exc}"
+        )
+
+
+@router.get("/search/conversations")
+async def search_conversations_endpoint(
+    query: str = Query(..., description="Search query"),
+    user_id: str = Query(..., description="User identifier"),
+    session_id: Optional[str] = Query(None, description="Optional session filter"),
+    limit: int = Query(10, ge=1, le=50, description="Maximum results"),
+):
+    """
+    Search conversations using semantic similarity (ChatGPT-like search).
+
+    Uses ChromaDB for vector-based semantic search across all conversations.
+    Finds conversations by meaning, not just exact text match.
+
+    Example:
+        GET /api/v1/search/conversations?query=bitcoin%20analysis&user_id=user123&limit=10
+    """
+    try:
+        results = chat_search.search_conversations(
+            query=query,
+            user_id=user_id,
+            session_id=session_id,
+            limit=limit
+        )
+
+        return {
+            "query": query,
+            "results": results,
+            "count": len(results),
+            "user_id": user_id,
+            "session_filter": session_id
+        }
+
+    except Exception as exc:
+        logger.error("Error searching conversations: %s", exc, exc_info=True)
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error searching conversations: {exc}"
+        )
 
 
 @router.post("/analyze")

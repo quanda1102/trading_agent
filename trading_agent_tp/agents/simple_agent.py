@@ -46,27 +46,32 @@ def get_latest_price(
                     """
                     SELECT * FROM finance_services.crypto_kline_hours
                     WHERE `interval` IN ('1h', '4h')
-                      AND DATE(open_time) >= DATE_SUB(NOW(), INTERVAL 30 DAY)
+                      AND DATE(open_time) >= DATE_SUB(NOW(), INTERVAL 7 DAY)
                       AND symbol = %s
                     """,
                     """
                     SELECT * FROM finance_services.futures_funding_rates
                     WHERE symbol = %s
-                      AND DATE(funding_time) >= DATE_SUB(NOW(), INTERVAL 30 DAY)
+                      AND DATE(funding_time) >= DATE_SUB(NOW(), INTERVAL 7 DAY)
+                    """,
+                    """
+                    SELECT * FROM finance_services.futures_open_interests
+                    WHERE symbol = %s
+                      AND DATE(timestamp) >= DATE_SUB(NOW(), INTERVAL 7 DAY)
                     """
                 ]
             elif horizon == "medium":
                 queries = ["""
                     SELECT * FROM finance_services.crypto_kline_days
                     WHERE `interval` = '1d'
-                      AND DATE(open_time) >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+                      AND DATE(open_time) >= DATE_SUB(NOW(), INTERVAL 6 MONTH)
                       AND symbol = %s
                 """]
             elif horizon == "long":
                 queries = ["""
                     SELECT * FROM finance_services.crypto_kline_weeks
                     WHERE `interval` = '1w'
-                      AND DATE(open_time) >= DATE_SUB(NOW(), INTERVAL 10 YEAR)
+                      AND DATE(open_time) >= DATE_SUB(NOW(), INTERVAL 5 YEAR)
                       AND symbol = %s
                 """]
             else:

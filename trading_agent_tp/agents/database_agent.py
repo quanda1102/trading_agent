@@ -10,8 +10,7 @@ import json
 import re
 from typing import Optional
 
-from ..tools.database_tool import execute_database_query
-from ..tools.database_tool_enhanced import smart_query_with_horizon
+from ..tools.database_tool_enhanced import smart_query_with_horizon, execute_database_query
 
 
 DATABASE_AGENT_PROMPT = """You are the DATABASE AGENT in a multi-agent trading system.

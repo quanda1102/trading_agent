@@ -13,19 +13,9 @@ from datetime import datetime, timezone
 from typing import List, Dict, Any, Optional, Set, Tuple
 from agents import Runner
 
-try:
-    # Try to use structured planner (Pydantic - zero JSON errors)
-    from .planner_agent_structured import planner_agent_structured as planner_agent
-    print("✅ Using structured planner with Pydantic (zero JSON errors)")
-except ImportError:
-    try:
-        # Fallback to enhanced planner
-        from .planner_agent_enhanced import planner_agent_enhanced as planner_agent
-        print("⚠️  Using enhanced planner (improved prompts)")
-    except ImportError:
-        # Fallback to original planner
-        from .planner_agent import planner_agent
-        print("⚠️  Using original planner")
+# Use structured planner (Pydantic - zero JSON errors)
+from .planner_agent_structured import planner_agent_structured as planner_agent
+print("✅ Using structured planner with Pydantic (zero JSON errors)")
 
 from ..agents import database_agent, analysis_agent, research_agent, report_agent
 

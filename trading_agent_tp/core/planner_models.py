@@ -52,8 +52,8 @@ class Plan(BaseModel):
     plan: List[Task] = Field(
         ...,
         description="List of tasks to execute",
-        min_items=1,
-        max_items=10
+        min_length=1,
+        max_length=10
     )
 
     estimated_cycles: int = Field(
