@@ -197,6 +197,7 @@ class ConversationRepository:
         user_id: str,
         session_id: str,
         title: Optional[str] = None,
+        agent_type: str = "multi_agent",
     ) -> Dict[str, Any]:
         """Create or update session metadata. Auto-generates title from first message if not provided."""
         now = self._utcnow()
@@ -242,9 +243,9 @@ class ConversationRepository:
 
                 # Insert new session
                 conn.execute(
-                    """INSERT INTO sessions (user_id, session_id, title, created_at, updated_at, message_count)
-                       VALUES (?, ?, ?, ?, ?, 1)""",
-                    (user_id, session_id, title, now, now)
+                    """INSERT INTO sessions (user_id, session_id, title, created_at, updated_at, message_count, agent_type)
+                       VALUES (?, ?, ?, ?, ?, 1, ?)""",
+                    (user_id, session_id, title, now, now, agent_type)
                 )
 
         return self.get_session(user_id=user_id, session_id=session_id)
@@ -253,13 +254,19 @@ class ConversationRepository:
         """Get session details with metadata."""
         with self._get_connection() as conn:
             row = conn.execute(
-                """SELECT id, user_id, session_id, title, created_at, updated_at, message_count
+                """SELECT id, user_id, session_id, title, created_at, updated_at, message_count, agent_type
                    FROM sessions WHERE user_id = ? AND session_id = ?""",
                 (user_id, session_id)
             ).fetchone()
 
             if row is None:
                 raise ValueError(f"Session not found: {user_id}/{session_id}")
+
+            # Handle agent_type safely (sqlite3.Row doesn't have .get() method)
+            try:
+                agent_type_value = row["agent_type"]
+            except (KeyError, IndexError):
+                agent_type_value = "multi_agent"  # Fallback for old databases
 
             return {
                 "id": row["id"],
@@ -268,7 +275,8 @@ class ConversationRepository:
                 "title": row["title"],
                 "created_at": row["created_at"],
                 "updated_at": row["updated_at"],
-                "message_count": row["message_count"]
+                "message_count": row["message_count"],
+                "agent_type": agent_type_value
             }
 
     def list_sessions(
@@ -277,11 +285,18 @@ class ConversationRepository:
         user_id: str,
         page: int = 1,
         page_size: int = 50,
+        agent_type: Optional[str] = None,
     ) -> Tuple[List[Dict[str, Any]], int]:
         """
         List all sessions for a user, ordered by most recent.
 
         Optimized with window function to get count in single query (~40% faster).
+        
+        Args:
+            user_id: User identifier
+            page: Page number (1-indexed)
+            page_size: Items per page
+            agent_type: Optional filter by agent type ('multi_agent' or 'simple_agent')
         """
         if page < 1:
             raise ValueError("page must be >= 1")
@@ -290,8 +305,16 @@ class ConversationRepository:
 
         offset = (page - 1) * page_size
 
+        # Build query with optional agent_type filter
+        where_clause = "WHERE user_id = ?"
+        params: List[Any] = [user_id]
+        
+        if agent_type is not None:
+            where_clause += " AND agent_type = ?"
+            params.append(agent_type)
+
         # Optimized: Use window function to get count and data in single query
-        query = """
+        query = f"""
             SELECT
                 id,
                 user_id,
@@ -300,18 +323,22 @@ class ConversationRepository:
                 created_at,
                 updated_at,
                 message_count,
+                agent_type,
                 COUNT(*) OVER() as total_count
             FROM sessions
-            WHERE user_id = ?
+            {where_clause}
             ORDER BY datetime(updated_at) DESC
             LIMIT ? OFFSET ?
         """
+        
+        params.extend([page_size, offset])
 
         with self._get_connection() as conn:
-            rows = conn.execute(query, (user_id, page_size, offset)).fetchall()
+            rows = conn.execute(query, params).fetchall()
 
         if not rows:
-            logger.debug(f"No sessions found for user {user_id}")
+            filter_info = f" (agent_type={agent_type})" if agent_type else ""
+            logger.debug(f"No sessions found for user {user_id}{filter_info}")
             return [], 0
 
         # Extract total from first row
@@ -320,6 +347,12 @@ class ConversationRepository:
         # Build session list (excluding total_count)
         sessions = []
         for row in rows:
+            # Handle agent_type safely (sqlite3.Row doesn't have .get() method)
+            try:
+                agent_type_value = row["agent_type"]
+            except (KeyError, IndexError):
+                agent_type_value = "multi_agent"  # Fallback for old databases
+
             sessions.append({
                 "id": row["id"],
                 "user_id": row["user_id"],
@@ -327,12 +360,14 @@ class ConversationRepository:
                 "title": row["title"],
                 "created_at": row["created_at"],
                 "updated_at": row["updated_at"],
-                "message_count": row["message_count"]
+                "message_count": row["message_count"],
+                "agent_type": agent_type_value
             })
 
+        filter_info = f", agent_type={agent_type}" if agent_type else ""
         logger.debug(
             f"Listed sessions for {user_id}: "
-            f"page={page}, items={len(sessions)}, total={total}"
+            f"page={page}, items={len(sessions)}, total={total}{filter_info}"
         )
 
         return sessions, int(total)
@@ -410,10 +445,26 @@ class ConversationRepository:
                 )
                 """
             )
+            
+            # Migration: Add agent_type column if it doesn't exist (must happen before index creation)
+            cursor = conn.execute("PRAGMA table_info(sessions)")
+            columns = [row[1] for row in cursor.fetchall()]
+            if "agent_type" not in columns:
+                logger.info("Migrating sessions table: adding agent_type column")
+                conn.execute("ALTER TABLE sessions ADD COLUMN agent_type TEXT DEFAULT 'multi_agent'")
+                conn.commit()
+            
+            # Create indexes (after migration to ensure agent_type column exists)
             conn.execute(
                 """
                 CREATE INDEX IF NOT EXISTS idx_sessions_user
                 ON sessions (user_id, updated_at DESC)
+                """
+            )
+            conn.execute(
+                """
+                CREATE INDEX IF NOT EXISTS idx_sessions_agent_type
+                ON sessions (user_id, agent_type, updated_at DESC)
                 """
             )
 

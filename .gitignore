@@ -11,3 +11,15 @@ wheels/
 .env
 # Local data stores
 data/*.db
+
+# Coverage reports
+coverage.xml
+.coverage
+.tox/
+.nox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover

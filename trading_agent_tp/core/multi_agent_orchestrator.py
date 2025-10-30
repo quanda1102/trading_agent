@@ -326,7 +326,7 @@ class MultiAgentOrchestrator:
         Execute task with specified specialized agent.
 
         Returns:
-            Dict with keys: result
+            Dict with keys: result, raw_response
         """
         agent = self.agents[agent_type]
         task_id = task["id"]
@@ -349,7 +349,8 @@ class MultiAgentOrchestrator:
         })
 
         return {
-            "result": agent_content
+            "result": agent_content,
+            "raw_response": agent_response  # Store raw response for file reference extraction
         }
 
     async def _planning_phase(self, cycle_num: int) -> Dict[str, Any]:
@@ -713,7 +714,8 @@ class MultiAgentOrchestrator:
                 agent_results[agent_type] = []
             agent_results[agent_type].append({
                 "task_id": task_id,
-                "result": exec_result["result"]
+                "result": exec_result["result"],
+                "raw_response": exec_result.get("raw_response")  # Store raw response for file extraction
             })
 
             self.completed_task_signatures.add(self._task_signature(task))

@@ -11,6 +11,7 @@ import logging
 
 from trading_agent_tp.api.multi_agent_endpoints import router as multi_agent_router
 from trading_agent_tp.api.simple_agent_endpoints import router as simple_agent_router
+from trading_agent_tp.api.file_proxy_endpoints import router as file_proxy_router
 
 # Configure logging
 logging.basicConfig(
@@ -74,6 +75,7 @@ app.add_middleware(
 # Include routers
 app.include_router(multi_agent_router)
 app.include_router(simple_agent_router)
+app.include_router(file_proxy_router)
 
 # Root endpoint
 @app.get("/")
@@ -91,6 +93,10 @@ async def root():
             "memory": "/api/v1/memory/{user_id}/{session_id}",
             "simple_chat": "/api/simple/chat",
             "simple_health": "/api/simple/health",
+            "simple_session": "/api/simple/session/{user_id}/{session_id}",
+            "simple_clear_session": "/api/simple/session/{user_id}/{session_id} (DELETE)",
+            "file_download": "/api/v1/files/download/{container_id}/{file_id}/{filename}",
+            "file_proxy_health": "/api/v1/files/health",
             "docs": "/docs",
             "redoc": "/redoc"
         },
@@ -104,10 +110,11 @@ async def root():
             "Intelligent task delegation",
             "Multi-agent coordination",
             "Vietnamese language support",
-            "Conversation memory",
+            "Conversation memory (both multi-agent and simple agent)",
             "Comprehensive technical indicators",
             "Real-time market research",
-            "Structured output with emojis"
+            "Structured output with emojis",
+            "Simple agent with persistent session memory"
         ]
     }
 
@@ -119,10 +126,10 @@ async def startup_event():
     logger.info("MULTI-AGENT TRADING SYSTEM STARTING")
     logger.info("="*80)
     logger.info("Loading specialized agents...")
-    logger.info("  ✅ DatabaseAgent - Data retrieval & validation")
-    logger.info("  ✅ AnalysisAgent - Technical analysis")
-    logger.info("  ✅ ResearchAgent - Market research")
-    logger.info("  ✅ ReportAgent - Vietnamese reports")
+    logger.info("DatabaseAgent - Data retrieval & validation")
+    logger.info("AnalysisAgent - Technical analysis")
+    logger.info("ResearchAgent - Market research")
+    logger.info("ReportAgent - Vietnamese reports")
     logger.info("="*80)
     logger.info("System ready! Access docs at http://localhost:8888/docs")
     logger.info("="*80)
@@ -138,9 +145,9 @@ async def shutdown_event():
 
 if __name__ == "__main__":
     uvicorn.run(
-        "main_multi_agent:app",
+        "main:app",
         host="0.0.0.0",
         port=8888,
-        reload=True,
+        reload=False,
         log_level="info"
     )

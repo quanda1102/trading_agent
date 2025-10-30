@@ -14,6 +14,7 @@ import logging
 from ..core.multi_agent_orchestrator import MultiAgentOrchestrator
 from ..storage import ConversationRepository
 from ..services.chat_search import ChatSearchService
+from ..utils.file_proxy import replace_sandbox_links
 
 try:
     from ..memory.memory_manager import MemoryManager
@@ -152,6 +153,30 @@ async def chat_endpoint(request: ChatRequest):
             memory_context=memory_context
         )
 
+        # Collect file references from all agent raw responses
+        file_refs = []
+        agent_results = result.get("agent_results", {})
+        for agent_type, agent_data in agent_results.items():
+            if agent_data:  # agent_data is a list of task results
+                for task_result in agent_data:
+                    raw_response = task_result.get("raw_response")
+                    if raw_response:
+                        # Import collect_file_refs from file_proxy utils
+                        from ..utils.file_proxy import collect_file_refs
+                        task_refs = collect_file_refs(raw_response)
+                        file_refs.extend(task_refs)
+
+        logger.info(f"Collected {len(file_refs)} file references from agent responses")
+
+        # Replace sandbox links with proxy URLs
+        if result.get("final_answer") and file_refs:
+            result["final_answer"] = replace_sandbox_links(
+                text=result["final_answer"],
+                refs=file_refs,
+                backend_base=None  # Uses default from environment
+            )
+            logger.info("Replaced sandbox links in final answer")
+
         status_label: Literal["success", "failed", "timeout"]
         if result.get("success"):
             status_label = "success"
@@ -187,7 +212,8 @@ async def chat_endpoint(request: ChatRequest):
             # Update session metadata (auto-generates title from first message)
             conversation_repository.upsert_session(
                 user_id=request.user_id,
-                session_id=request.session_id
+                session_id=request.session_id,
+                agent_type="multi_agent"
             )
 
             # Index conversation for semantic search
@@ -441,20 +467,25 @@ async def list_sessions_endpoint(
     user_id: str = Query(..., description="User identifier"),
     page: int = Query(1, ge=1, description="Page number (1-indexed)"),
     page_size: int = Query(50, ge=1, le=100, description="Items per page"),
+    agent_type: Optional[str] = Query(None, description="Filter by agent type: 'multi_agent' or 'simple_agent'"),
 ):
     """
     List all chat sessions for a user (ChatGPT-like session list).
 
     Returns sessions ordered by most recent activity with auto-generated titles.
+    Supports both multi-agent and simple-agent sessions in a unified list.
 
-    Example:
+    Examples:
         GET /api/v1/sessions?user_id=user123&page=1&page_size=20
+        GET /api/v1/sessions?user_id=user123&agent_type=simple_agent
+        GET /api/v1/sessions?user_id=user123&agent_type=multi_agent
     """
     try:
         sessions, total = conversation_repository.list_sessions(
             user_id=user_id,
             page=page,
-            page_size=page_size
+            page_size=page_size,
+            agent_type=agent_type
         )
 
         return {
@@ -462,7 +493,8 @@ async def list_sessions_endpoint(
             "total": total,
             "page": page,
             "page_size": page_size,
-            "has_more": (page * page_size) < total
+            "has_more": (page * page_size) < total,
+            "agent_type_filter": agent_type
         }
 
     except ValueError as exc:

@@ -1,6 +1,6 @@
 import pandas as pd
 from ast import Await
-from agents import Agent, Runner, function_tool
+from agents import Agent, Runner, function_tool, CodeInterpreterTool, WebSearchTool
 from dotenv import load_dotenv
 import os
 from typing import List, Union
@@ -101,20 +101,15 @@ def get_latest_price(
 
     cursor.close()
     conn.close()
-
-    # 🔥 Trả về kiểu string JSON để tương thích với @function_tool
+    
     return json.dumps(results, default=str)
-
-
-
-
-
 
 # --- Define simple agent ---
 simple_agent = Agent(
     name="SimpleAgent",
-    model="gpt-4.1-mini",
+    model="gpt-5-mini",
     instructions="""Bạn là chuyên gia phân tích kỹ thuật crypto chuyên sâu, sử dụng logic phân tích đa khung thời gian (4H – 1D – 1W) kết hợp dữ liệu thực tế gồm:
+- Khung giờ mà bạn sẽ được cung cấp cũng như sử dụng là giờ Việt Nam, asia, UTC+7
 - Giá hiện tại, giá mở cửa, biên độ dao động 24h.
 - Các mức hỗ trợ, kháng cự.
 - Volume, OI, Funding rate.
@@ -141,9 +136,9 @@ Tóm tắt biến động 4H gần nhất (giá hiện tại, biên độ, tín 
 ### 🔸 Hỗ trợ – Kháng cự ngắn hạn:
 Liệt kê 2 mức hỗ trợ, 2 mức kháng cự rõ ràng.
 
-### 🔸 Nhận định xác suất:
-- ✅ Xác suất tăng/hồi kỹ thuật (%)
-- ❌ Xác suất giảm/thủng hỗ trợ (%)
+### 🔸 Nhận định xác suất: (Trong khung thời gian dự kiến cụ thể)
+- ✅ Xác suất tăng/hồi kỹ thuật (%) Trong (khung thời gian dự kiến cụ thể)
+- ❌ Xác suất giảm/thủng hỗ trợ (%) Trong (khung thời gian dự kiến cụ thể)
 Phân tích điều kiện volume mạnh/yếu.
 
 ### 📌 Gợi ý điểm vào – ra:
@@ -155,13 +150,13 @@ Phân tích điều kiện volume mạnh/yếu.
 ## 📅 2. Phân tích khung 1D (Trung hạn – xu hướng)
 Tóm tắt nến daily, xu hướng trung hạn, hỗ trợ/kháng cự chính, xác suất hồi hay retest đáy.
 Gợi ý điểm vào/ra trung hạn tương tự.
-
+Kịch bản cần nêu rõ khung thời gian dự kiến cụ thể
 ---
 
 ## 🪙 3. Phân tích khung 1W (Dài hạn – chiến lược)
 Mô tả hành vi nến tuần, xu hướng tổng thể, hỗ trợ/kháng cự dài hạn.
 Đưa ra kịch bản chính/phụ, xác suất đảo chiều.
-
+Kịch bản cần nêu rõ khung thời gian dự kiến cụ thể
 ---
 
 ## 📊 Tổng hợp chiến lược
@@ -196,13 +191,17 @@ Người dùng có thể nhập:
 
 ---
 
-### 🎯 Mục tiêu:
-Sinh báo cáo chuyên sâu theo format cố định trên, trình bày rõ ràng, dễ xuất sang Word/Excel hoặc gửi lãnh đạo/trader khác.
-
----
-
 """,
-    tools=[get_latest_price]
+    tools=[
+        get_latest_price,
+        CodeInterpreterTool(
+            tool_config={
+                "type": "code_interpreter",
+                "container": {"type": "auto"}
+            }
+        ),
+        WebSearchTool()
+    ]
 )
 
 # --- Interactive CLI ---
