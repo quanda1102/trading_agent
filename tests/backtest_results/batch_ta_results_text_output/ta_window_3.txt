@@ -1,0 +1,69 @@
+Dưới đây là phân tích kỹ thuật ngắn hạn (khung 4H, giờ Việt Nam UTC+7) cho ETH dựa trên dữ liệu nến 4H từ 2025-05-22 → 2025-05-28 (cập nhật tới nến 2025-05-28 23:00).
+
+Tóm tắt nhanh:
+- Giá hiện tại (close nến 4H gần nhất): 2,626.90 USDT
+- Giá mở cửa 24h trước (nến 2025-05-27 23:00 open): 2,652.64 USDT
+- Biên độ 24h: High = 2,712.36 | Low = 2,608.50
+- Thay đổi 24h: -0.97% (so với open 24h trước)
+- Avg Volume (dataset): 107,358.65; Volume nến hiện tại: 163,925.61 (~153% so với trung bình)
+
+1) Diễn biến giá (4H gần nhất)
+- Hành động giá nến 4H gần nhất (2025-05-28 23:00): O=2,656.99, H=2,689.14, L=2,613.20, C=2,626.90, V=163,925.61.
+  - Nến gần nhất là một thân nến giảm biên độ lớn (bearish body) đóng cửa gần đáy thanh nến, có bóng trên dài — cấu trúc dạng Bearish Engulfing so với nến trước → tín hiệu bán/áp lực cung tăng.
+  - Volume tăng mạnh (~153% so với trung bình 20 kỳ) → xác nhận lực bán chủ động trong phiên này.
+- EMA / xu hướng ngắn hạn: không có dữ liệu EMA tính sẵn; quan sát đường giá 4H cho thấy EMA ngắn hạn đang dao động phẳng đến hơi hướng lên sau đáy 25–26/5, nhưng gần đây có dấu hiệu suy yếu do nến giảm mạnh.
+- RSI / MACD: dữ liệu chỉ số không được cung cấp nên không thể báo cáo chính xác; tuy nhiên hành động giá + volume gợi ý momentum giảm ngắn hạn.
+- Kết luận hành động giá: áp lực bán tăng (nến giảm mạnh + volume cao). Cần quan sát vùng hỗ trợ gần để xem có bắt đáy hay tiếp tục phá.
+
+2) Hỗ trợ – Kháng cự ngắn hạn (vùng ±0.5%)
+- Hỗ trợ 1: 2,608.50 (24h low) | Kháng cự 1: 2,689 – 2,712 (vùng high recent)
+- Hỗ trợ 2: 2,510 – 2,530 (vùng cầu nhiều lần test 25/5 → 26/5) | Kháng cự 2: 2,734.0 (đỉnh 2025-05-23 11:00)
+
+Ghi chú: Hỗ trợ 1: 2,608.50 | Kháng cự 1: 2,689–2,712
+
+3) Xác suất diễn biến (24–72 giờ tới)
+
+| Kịch bản            | Xác suất (%) | Giải thích                                                                      |
+| ------------------- | ------------ | ------------------------------------------------------------------------------- |
+| Tăng / hồi kỹ thuật | 35%          | Giá có thể bật lại nếu giữ được vùng 2,608–2,630 với volume giảm và xuất hiện nến phục hồi; vùng 2,510–2,530 là hỗ trợ mạnh nếu test lần 2. |
+| Giảm / thủng hỗ trợ | 65%          | Nến 4H gần nhất là bearish engulfing kèm volume tăng mạnh → ưu tiên kịch bản bán. Nếu phá 2,608.50 với volume cao, khả năng tiếp tục giảm về vùng 2,510–2,530 cao. |
+
+Lý do chính: nến giảm mạnh + volume xác nhận; thiếu dữ liệu OI/funding (không có) khiến ta không thể kiểm chứng dòng tiền phái sinh — nên ưu tiên quản trị rủi ro.
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+- ATR(14, 4H) ước tính ≈ 46.8 USDT → 1.5x ATR ≈ 70 USDT; 2x ATR ≈ 94 USDT (ước lượng từ trung bình biên độ 14 candle gần nhất).
+Long Setup:
+- Entry: mua vùng hỗ trợ 2,610–2,640 (chỉ khi xuất hiện nến đảo chiều/volume giảm so với nến bán mạnh).
+- Stop Loss: 1.5x–2x ATR dưới hỗ trợ gần nhất → nếu vào tại 2,620 (ví dụ), SL ≈ 2,620 − 70 = 2,550 (1.5x ATR) hoặc −94 = 2,526 (2x ATR).
+- Take Profit:
+  - TP1: 2,689–2,712 (kháng cự gần; chốt 50%)
+  - TP2: 2,734 (kháng cự mạnh; chốt 50%)
+- Quản trị khi TP1 đạt → dời SL về hòa vốn.
+
+Short Setup:
+- Entry: bán phá hỗ trợ/retreat vào vùng 2,600–2,580 hoặc sell-on-rejection dưới 2,689–2,712 nếu giá test lại và bị từ chối.
+- Stop Loss: 1.5x–2x ATR trên kháng cự gần nhất → nếu short tại 2,600 và target phá xuống, SL ≈ 2,600 + 70 = 2,670 (1.5x ATR) hoặc +94 = 2,694 (2x ATR).
+- Take Profit:
+  - TP1: 2,510–2,530 (hỗ trợ yếu/mục tiêu đầu)
+  - TP2: 2,450–2,500 vùng hỗ trợ sâu hơn nếu phá mạnh
+- Khi TP1 đạt → dời SL giảm rủi ro/lấy hòa vốn.
+
+5) Tổng hợp chiến lược
+
+| Khung | Hỗ trợ | Kháng cự | Xu hướng | Kịch bản chính | Kịch bản phụ |
+| ----- | ------ | -------- | -------- | -------------- | ------------ |
+| 4H    | 2,608; 2,510–2,530 | 2,689–2,712; 2,734 | Ngắn hạn: trung tính→hơi giảm (bearish bias) | Phá 2,608 → tiếp tục giảm về 2,510 | Giữ 2,608 → bật về 2,690–2,712 (hồi kỹ thuật) |
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: theo dõi sát vùng 2,608–2,640; chỉ vào lệnh Long khi xuất hiện nến đảo chiều rõ ràng + volume không tăng mạnh (ưu tiên volume ≤120% trung bình 20 kỳ).
+- Nếu thấy retest kháng cự 2,689–2,712 với rejection + volume tăng → có setup Short (sell on rejection).
+- Funding Rate / OI: không có dữ liệu → cần thận trọng hơn (không biết dòng tiền phái sinh đang bias long/short).
+- Quy tắc quản trị rủi ro: chỉ vào lệnh với RR >= 1:1.5, kích thước vị thế phù hợp để giới hạn rủi ro tối đa theo tài khoản (ví dụ rủi ro 1–2% vốn mỗi lệnh).
+- Điều kiện xác nhận trước khi vào lệnh: volume ≥120% trung bình 20 kỳ để xác nhận breakout; ngược lại nếu volume thấp, chờ pullback/confirmation.
+
+Kết luận ngắn gọn:
+- Áp lực bán ngắn hạn tăng (nến giảm mạnh + volume cao). Khả năng cao trong 24–72h là kiểm tra/giải quyết vùng 2,608; nếu phá thì mở rộng giảm về 2,510–2,530. Nếu giữ được 2,608 và xuất hiện nến đảo chiều/volume giảm, có khả năng hồi kỹ thuật lên vùng 2,689–2,712. Vì thiếu OI/Funding rate, cần thận trọng hơn và tuân thủ strict SL/TP.
+
+Nếu bạn muốn, tôi có thể:
+- Tính lại ATR/RSI/MACD chính xác từ dữ liệu đầy đủ và vẽ biểu đồ EMA 20/50/200 4H;
+- Hoặc đưa ra mức kích thước vị thế cụ thể dựa trên tỷ lệ rủi ro vốn (ví dụ rủi ro 1% vốn).

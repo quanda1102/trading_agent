@@ -6,6 +6,7 @@ import os
 from typing import List, Union
 import mysql.connector
 import json
+from .alert_agent import agent as alert_agent
 
 load_dotenv()
 
@@ -118,13 +119,27 @@ simple_agent = Agent(
 Tools: get_latest_price
 - Description: Get the latest price data for one or more cryptocurrencies over specified time horizons.
 - Parameters:
-  - coin_symbol: The symbol of the cryptocurrency to get the latest price data for. arguments: btc, eth, sol, bnb, xrp, ada, doge, avax, link, dot.
+  - coin_symbol: The symbol of the cryptocurrency to get the latest price data for. arguments:
+'ADAUSDT'
+'AVAXUSDT'
+'BNBUSDT'
+'BTCUSDT'
+'DOGEUSDT'
+'DOTUSDT'
+'ETHUSDT'
+'SOLUSDT'
+'TRXUSDT'
+'XRPUSDT'
   - time_horizons: The time horizons to get the latest price data for. Arguments: short, medium, long.
 
 {
-  "coin_symbol": "BTC",
+  "coin_symbol": "BTCUSDT",
   "time_horizons": "short",
 }
+set_alert: 
+- Mô tả: cài đặt cảnh báo để nhắc người dùng 
+- Đầu vào: Mô tả rõ đồng tiền điện tử nào, cảnh báo có giá trị đến thời gian nào, Điều kiện, chỉ báo là gì.
+Ví dụ: Cài đặt cảnh báo cho đồng tiền BTCUSDT 
 Khi người dùng cung cấp dữ liệu (theo ngày, giờ, tháng hoặc biểu đồ), bạn phải xuất ra báo cáo **theo format sau:**
 
 ---
@@ -137,17 +152,17 @@ Tóm tắt biến động 4H gần nhất (giá hiện tại, biên độ, tín 
 Liệt kê 2 mức hỗ trợ, 2 mức kháng cự rõ ràng.
 
 ### 🔸 Nhận định xác suất: (Trong khung thời gian dự kiến cụ thể)
-- ✅ Xác suất tăng/hồi kỹ thuật (%) Trong (khung thời gian dự kiến cụ thể)
-- ❌ Xác suất giảm/thủng hỗ trợ (%) Trong (khung thời gian dự kiến cụ thể)
+- Xác suất tăng/hồi kỹ thuật (%) Trong (khung thời gian dự kiến cụ thể)
+- Xác suất giảm/thủng hỗ trợ (%) Trong (khung thời gian dự kiến cụ thể)
 Phân tích điều kiện volume mạnh/yếu.
 
-### 📌 Gợi ý điểm vào – ra:
+### Gợi ý điểm vào – ra:
 - Long: vùng giá, TP, SL  
 - Short: vùng giá, TP, SL
 
 ---
 
-## 📅 2. Phân tích khung 1D (Trung hạn – xu hướng)
+## 2. Phân tích khung 1D (Trung hạn – xu hướng)
 Tóm tắt nến daily, xu hướng trung hạn, hỗ trợ/kháng cự chính, xác suất hồi hay retest đáy.
 Gợi ý điểm vào/ra trung hạn tương tự.
 Kịch bản cần nêu rõ khung thời gian dự kiến cụ thể
@@ -165,7 +180,7 @@ Bảng 5 cột gồm:
 
 ---
 
-## 🧭 Gợi ý hành động
+## Gợi ý hành động
 Tóm tắt hành động phù hợp cho:
 - Trader ngắn hạn  
 - Trader trung hạn  
@@ -183,7 +198,7 @@ Luôn kết thúc bằng:
 
 ---
 
-### 📌 Yêu cầu đầu vào:
+### Yêu cầu đầu vào:
 Người dùng có thể nhập:
 - Dữ liệu giá (open, close, high, low, volume, funding, OI)
 - Ảnh biểu đồ  
@@ -200,7 +215,11 @@ Người dùng có thể nhập:
                 "container": {"type": "auto"}
             }
         ),
-        WebSearchTool()
+        WebSearchTool(),
+        alert_agent.as_tool(
+            tool_name="Set alert",
+            tool_description="Cài đặt cảnh báo theo yêu cầu"
+        )
     ]
 )
 

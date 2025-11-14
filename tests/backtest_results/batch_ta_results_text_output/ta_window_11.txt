@@ -1,0 +1,78 @@
+Dưới đây là phân tích kỹ thuật 4H cho ETH (khung thời gian sử dụng: giờ Việt Nam UTC+7) dựa trên dữ liệu nến 4H từ 2025-06-15 → 2025-06-21 (42 cây). Tập trung vào kịch bản 24–72 giờ tới.
+
+Tóm tắt nhanh
+- Giá hiện tại (Close cuối cùng): 2,423.59 USD (candle 2025-06-21 23:00)
+- Giá mở cửa 24h trước (close 2025-06-20 23:00): 2,493.78 USD
+- Thay đổi 24h: -2.81% (so với giá mở 24h trước)
+- Biên độ dao động 24h (high-low trong 24h): 2,559.55 – 2,367.36 → biên độ khoảng 8.1% (từ đáy)
+- Avg Volume (20 kỳ): 80,491.96; Volume trung bình 4H hiện tại: 49,701.54 (candle cuối) → ~62% của trung bình
+
+1) Diễn biến giá (4H gần nhất)
+- Candle 4H gần nhất (2025-06-21 23:00): O=2,442.75 H=2,445.20 L=2,412.29 C=2,423.59, V=49,701.54.
+  - Mẫu nến: thân giảm nhỏ, đóng ở vùng thấp của cây, có bóng dưới tương đối (lower wick ~30$), cho thấy áp lực bán vẫn còn và có nỗ lực bắt cầu ở đáy nhưng lực mua chưa đủ.
+  - Xu hướng ngắn hạn: phá vỡ cấu trúc tăng nhẹ trước đó (cú sập lớn vào 21/06 03:00) → cấu trúc chuyển sang trung tính→hơi thiên về giảm ngắn hạn.
+  - EMA (quan sát đa khung ngắn hạn): hệ số động (EMA ngắn) đang có độ dốc giảm sau cây sập mạnh; chưa thấy EMA đảo chiều lên.
+  - Momentum (RSI/MACD): dữ liệu số không có nhưng hành vi giá/volume cho thấy momentum giảm mạnh khi sập (có khả năng RSI đã về vùng thấp và có hồi phục nhỏ); MACD khả năng vẫn ở trạng thái bearish/histogram thu hẹp.
+- Volume so với trung bình 20 kỳ: Volume candle cuối ~49.7k ≈ 62% avg20 → Volume giảm ~38% so với trung bình → hồi phục giá gần đây thiếu khối lượng xác nhận (weak recovery).
+- Open Interest (OI): không có dữ liệu.
+  - Vì thiếu OI, không thể khẳng định dòng tiền phái sinh; cần theo dõi nếu OI bật tăng đồng thời với giá tăng để xác nhận dòng tiền mới.
+- Funding Rate: không có dữ liệu.
+
+2) Hỗ trợ – Kháng cự ngắn hạn (vùng ±0.5%)
+- Hỗ trợ 1: 2,410 – 2,435 (≈2,423 ±0.5%) | Kháng cự 1: 2,488 – 2,504 (≈2,496 ±0.5%)
+- Hỗ trợ 2: 2,360 – 2,380 (vùng đáy gần: 2,367.36) | Kháng cự 2: 2,550 – 2,570 (vùng cao tích lũy/hội tụ 2,549–2,569)
+Ghi chú: lấy các vùng ±0.5% quanh các mức tâm để phù hợp biến động 4H.
+
+3) Xác suất diễn biến (24–72 giờ tới)
+
+| Kịch bản            | Xác suất (%) | Giải thích                                                                      |
+| ------------------- | ------------ | ------------------------------------------------------------------------------- |
+| Tăng / hồi kỹ thuật | 30%          | Hồi nhẹ có khả năng xảy ra nếu volume hồi đạt ≥120% trung bình20 và giá vượt vùng 2,490–2,500; hiện lực hồi yếu, cần xác nhận volume/OI. |
+| Giảm / thủng hỗ trợ | 70%          | Cú sập mạnh (21/06 03:00) đi kèm volume cực lớn, sau đó chỉ hồi nhẹ với volume thấp → ưu tiên kịch bản tiếp tục phân phối/tiếp tục giảm; thiếu dữ liệu OI/funding để đánh giá trap chính xác. |
+
+Lý do trọng yếu: cây sập lớn với volume rất cao (287k), nhiều cây phục hồi nhưng khối lượng thấp → phản ánh supply còn mạnh; không có xác nhận dòng tiền mới từ OI/funding.
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+Lưu ý: ATR(14, 4H) ước tính từ dữ liệu 14 cây gần nhất ≈ 42.4 USD. (Bạn nên kiểm tra ATR chính xác trên nền tảng trước khi đặt lệnh.)
+
+Long Setup:
+- Entry: vùng 2,410 – 2,440 USD (gần Hỗ trợ 1), ưu tiên mua khi có xác nhận: cây đóng trên vùng + volume ≥120% trung bình20.
+- Stop Loss: đặt ở dưới Hỗ trợ 1 theo 1.5x–2x ATR(14):
+  - 1.5x ATR ≈ 63.6 USD → SL ≈ 2,410 − 63.6 = 2,346 (khoảng)
+  - 2.0x ATR ≈ 84.8 USD → SL ≈ 2,410 − 84.8 = 2,325 (khoảng)
+- Take Profit:
+  - TP1: Kháng cự 1 ≈ 2,488–2,504 (chốt 50%)
+  - TP2: Kháng cự 2 ≈ 2,550–2,570 (chốt 50%)
+- Khi TP1 đạt → dời SL về hòa vốn (break-even).
+
+Short Setup:
+- Entry: vùng 2,485 – 2,520 USD (khi giá hồi về kháng cự 1 và bị từ chối), hoặc trên 2,550 nếu thấy đảo chiều thất bại.
+- Stop Loss: 1.5x–2x ATR trên kháng cự gần nhất:
+  - Nếu entry tại 2,500 và kháng cự 2 ~2,550 → SL ≈ 2,500 + 63.6 = 2,564 (1.5xATR) hoặc +84.8 = 2,585 (2xATR) tùy độ rủi ro.
+- Take Profit:
+  - TP1: Hỗ trợ 1 (2,410–2,440) – chốt 50%
+  - TP2: Hỗ trợ 2 (2,360–2,380) – chốt 50%
+- Khi TP1 đạt → dời SL về hòa vốn.
+
+Position sizing: tuân thủ max rủi ro mỗi lệnh ≤1–2% vốn; tính lot theo khoảng cách SL thực tế và kích thước rủi ro cho phép.
+
+5) Tổng hợp chiến lược
+
+| Khung | Hỗ trợ | Kháng cự | Xu hướng | Kịch bản chính | Kịch bản phụ |
+| ----- | ------ | -------- | -------- | -------------- | ------------ |
+| 4H (ngắn hạn) | 2,410–2,435; 2,360–2,380 | 2,488–2,504; 2,550–2,570 | Trung tính→thiên giảm | Tiếp tục giảm/thủng hỗ trợ (70%) | Hồi kỹ thuật nếu volume/OI xác nhận (30%) |
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: theo dõi vùng 2,410–2,440 (Hỗ trợ 1) để tìm setup long nếu có cây đóng xác nhận + volume ≥120% trung bình20 (≥ ~96,590). Nếu không có khối lượng xác nhận, tránh long.
+- Theo dõi vùng 2,485–2,520 (kháng cự 1) cho setup short nếu có rejection rõ ràng (nến đảo chiều + volume tăng).
+- Vì Funding/OI không có → cảnh giác với trap (fakeout) sau cây sập lớn; nếu OI bỗng tăng mạnh kèm giá tăng → coi chừng short squeeze; nếu OI tăng khi giá giảm → có thể là ép long.
+- Chỉ vào lệnh khi có tín hiệu xác nhận (candle close + volume) theo quy tắc risk/reward tối thiểu 1:1.5–1:2.
+
+Rủi ro & lưu ý cuối
+- Dữ liệu Funding Rate / Open Interest không có trong tập dữ liệu — điều này làm giảm độ chắc chắn trong việc xác định dòng tiền phái sinh (perpetuals). Nếu có thể, bổ sung OI & funding từ sàn để nâng chất lượng dự báo.
+- Sự kiện vĩ mô (công bố dữ liệu kinh tế, tin on-chain lớn hoặc sự kiện liên quan ETH như upgrade/đề xuất) có thể làm thay đổi nhanh kịch bản; theo dõi lịch tin.
+- Kiểm tra lại ATR/EMA/RSI/MACD trực tiếp trên nền tảng trước khi vào lệnh để có giá trị chính xác.
+
+Nếu bạn muốn, tôi có thể:
+- Cập nhật phân tích nếu cung cấp OI và funding rate 24h gần nhất.
+- Tính chính xác ATR, RSI, MACD từ dữ liệu nến này và vẽ các đường EMA (vui lòng xác nhận bạn muốn tôi tính các chỉ báo kỹ thuật chi tiết).

@@ -1,0 +1,77 @@
+Dưới đây là phân tích kỹ thuật theo khung 4H (giờ VN = UTC+7) cho ETH, dựa trên dữ liệu nến 4H từ 2025-06-21 đến 2025-06-27 (chuỗi 42 cây). Mọi giá/vùng đều tính theo USD.
+
+Tóm tắt nhanh trước: hiện tại ETH đang trong pha tích lũy ngang quanh ~2,400–2,460; khả năng cao là tiếp tục dao động trong vùng này trong 24–72 giờ tới, kịch bản hồi kỹ thuật (test 2,460→2,520) có xác suất nhỉnh hơn so với breakdown sâu, nhưng thanh khoản & OI thiếu dữ liệu làm giảm độ chắc chắn.
+
+1) Diễn biến giá (4H gần nhất)
+- Giá hiện tại (close nến 4H mới nhất, VN time 2025‑06‑28 06:00): 2,438.25 USD
+- Giá mở cửa của nến 4H gần nhất: 2,447.25 USD
+- Biên độ dao động 24h: high(24h)=2,463.54, low(24h)=2,418.20 → biên độ = 45.34 USD ≈ 1.86% so với giá hiện tại
+- Thay đổi giá 24h (so với close 24h trước): +0.21% (2438.25 vs 2433.03)
+- Mô tả hành động giá 4H gần nhất:
+  - Nến 4H gần nhất: thân nhỏ đỏ (open 2,447 → close 2,438) với bấc dưới kéo xuống ~2,414 → biểu hiện của sự do dự / thử thanh khoản vùng thấp.
+  - Hành động chung 4H gần đây: dao động side‑way với xu hướng nhẹ tích lũy/hồi từ vùng ~2,300 (sau cú rơi 22‑23/6) tới tích lũy quanh 2,400–2,460; có một spike lên 2,520 (26/6 11:00) rồi kéo về → cho thấy lực mua ngắn hạn mạnh nhưng không được duy trì.
+  - EMA (quan sát hành vi giá): độ dốc EMA ngắn hạn (4H EMA20) tương đối bằng phẳng → chưa có xu hướng tăng mạnh; EMA trung hạn nhẹ dương do đáy thấp trước đó.
+  - RSI/MACD: không có dữ liệu chính xác tính toán ở đây; quan sát giá cho thấy các chỉ báo dao động ở vùng trung tính (~50), không quá mua/kiếm tín hiệu mạnh.
+- Volume so với trung bình 20 kỳ:
+  - Trung bình Volume (toàn bộ dữ liệu): 98,121.9
+  - Volume nến 4H gần nhất: 67,273.6 ≈ 68.5% của trung bình → Volume giảm so với bình thường, tín hiệu cho thấy đà hiện tại thiếu lực xác nhận.
+  - Lưu ý các spike Volume đáng chú ý: 22/6 và 24/6 (vài cây >200k) và 26/6 11:00 (136k) — những cây này liên quan đến biến động lớn/shift thanh khoản.
+- Open Interest (OI): không có dữ liệu → không thể phân tích tương quan OI/giá. (Nếu OI ↑ cùng giá ↑ → tích cực; OI ↑ khi giá đi ngang/giảm → nghi trap/ép long.)
+- Funding rate: không có dữ liệu → không thể đánh giá áp lực long/short hiện tại. Nếu Funding dương cao → cảnh giác short squeeze; nếu âm mạnh → cảnh giác trap giảm.
+
+2) Hỗ trợ – Kháng cự ngắn hạn (vùng ±0.5%)
+- Hỗ trợ 1: 2,415 USD | vùng 2,402 – 2,427 (dựa trên đáy 27/06 03:00 ~2,418)
+- Hỗ trợ 2: 2,380 USD | vùng 2,368 – 2,392 (đáy & vùng cầu ngắn trước đó)
+- Kháng cự 1: 2,460 USD | vùng 2,448 – 2,472 (nhiều lần test 24–27/6)
+- Kháng cự 2: 2,520 USD | vùng 2,508 – 2,533 (đỉnh 26/6 11:00)
+
+3) Xác suất diễn biến (24–72 giờ tới)
+- Tăng / hồi kỹ thuật: 50%
+  - Lý do: giá đã thiết lập đáy ngắn hạn và tạo chuỗi higher lows so với đáy rơi; kháng cự 2,460–2,520 còn có lực bán nhưng khối lượng breakout vào 26/6 cho thấy bên mua sẵn sàng đẩy lên nếu có kích hoạt; hiện giá đứng trên vùng 2,400 giúp tăng xác suất test lại kháng cự.
+  - Yếu tố giảm độ tin cậy: volume hiện tại thấp, không có dữ liệu OI/funding để xác nhận dòng tiền phái sinh.
+- Giảm / thủng hỗ trợ: 30%
+  - Lý do: volume giảm, nhiều cây nến có bấc dưới test thanh khoản → nếu bên bán gia tăng với OI tăng (không có dữ liệu để khẳng định) thì khả năng thủng 2,380 và mở rộng về vùng 2,300 là hiện hữu.
+- Sideways / tiếp tục tích lũy: 20% (kịch bản bổ sung) — khả năng giá tiếp tục dao động hẹp trong 2,380–2,460 cho đến khi có kích hoạt rõ bằng volume/OI.
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+- Ước tính ATR(14, 4H) ≈ 48.7 USD → dùng làm chuẩn rủi ro (tính từ biến động các cây 4H gần nhất).
+Long Setup:
+- Entry 1 (pullback): vùng 2,410 – 2,425 USD (gần Hỗ trợ 1). Chỉ vào khi có xác nhận (ví dụ nến hồi tăng kèm volume ≥120% trung bình 20 kỳ → ≥ ~117,750).
+- Entry 2 (breakout): buy on close > 2,472 USD (close 4H trên vùng kháng cự 1) hoặc retest thành công sau breakout.
+- Stop Loss: đặt ở 1.5×–2× ATR dưới hỗ trợ gần nhất. Ví dụ nếu vào 2,420 và dùng hỗ trợ 2,415: SL = 2,415 − 1.5×48.7 ≈ 2,342 (1.5×ATR) hoặc 2,415 − 2×48.7 ≈ 2,317 (2×ATR).
+- Take Profit:
+  - TP1: 2,460 (chốt 50%)
+  - TP2: 2,520 (chốt 50%)
+  - Khi TP1 đạt → dời SL về điểm hòa vốn (break-even)
+Short Setup:
+- Entry 1 (reject tại kháng cự): vùng 2,448 – 2,472 USD (tín hiệu từ nến từ chối, volume tăng bên bán).
+- Entry 2 (fail breakout): khi giá vượt lên >2,472 nhưng quay về đóng nến 4H dưới 2,448 (false breakout).
+- Stop Loss: đặt 1.5×–2× ATR trên kháng cự gần nhất. Ví dụ short tại 2,460 → SL ≈ 2,460 + 73 = 2,533 (1.5×ATR) hoặc +97 = 2,557 (2×ATR).
+- Take Profit:
+  - TP1: 2,415 (chốt 50%)
+  - TP2: 2,380 (chốt 50%)
+  - Khi TP1 đạt → dời SL về hòa vốn hoặc giảm rủi ro.
+
+Ghi chú quản trị rủi ro:
+- Khối lượng lệnh nên tương ứng để rủi ro tối đa theo trade ≤ 1–2% vốn (tùy profile).
+- Chỉ vào lệnh khi có xác nhận volume ≥120% của 20‑kỳ (≥ ~117,750) hoặc hành động giá rõ (break + retest hoặc rejection mạnh).
+
+5) Tổng hợp chiến lược (tóm tắt)
+- Khung: 4H
+- Hỗ trợ: 2,415 | 2,380
+- Kháng cự: 2,460 | 2,520
+- Xu hướng: tích lũy ngang, bias nhẹ tăng ngắn hạn
+- Kịch bản chính: Bounce/hồi kỹ thuật lên 2,460 → 2,520 (50%)
+- Kịch bản phụ: Thủng 2,380 mở rộng về 2,300s (30%)
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: tập trung theo dõi vùng 2,410–2,472. Ưu tiên trade theo breakout có volume xác nhận (≥120% trung bình 20 kỳ) hoặc pullback có nến xác nhận mua. Tránh vào lệnh trên tin hiệu yếu (volume thấp).
+- Nếu có dữ liệu Funding Rate cao dương → cảnh giác trap tăng/short squeeze; nếu funding âm mạnh → cảnh trap giảm. Hiện không có dữ liệu funding → kiểm tra sàn/derivative platform bạn trade trước khi mở vị thế.
+- Chỉ vào lệnh khi có xác nhận volume ≥120% trung bình 20 kỳ (ngưỡng ~117,750 theo dữ liệu này).
+- Giữ SL theo ATR đề xuất (1.5–2× ATR) để tránh bị quét bởi nhiễu giá 4H.
+
+Kết luận ngắn: ETH đang tích lũy quanh ~2,400 với bias nhẹ tích cực; xác suất hồi về 2,460–2,520 cao hơn breakdown sâu, nhưng volume thấp và thiếu dữ liệu OI/funding làm giảm độ tin cậy — ưu tiên chờ volume/OI xác nhận hoặc hành động giá rõ ràng trước khi tăng kích thước vị thế.
+
+Nếu bạn muốn, tôi có thể:
+- Tính chính xác EMA/RSI/MACD và ATR dựa trên dữ liệu nến 4H đầy đủ (tạo biểu đồ số liệu chi tiết).
+- Kiểm tra thêm dữ liệu OI / funding từ sàn cụ thể bạn đang dùng để hoàn thiện phân tích.

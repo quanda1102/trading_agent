@@ -1,0 +1,79 @@
+Dưới đây là phân tích kỹ thuật ngắn hạn (4H) cho ETH dựa trên dữ liệu 2025-09-07 → 2025-09-13 (tất cả thời gian quy về UTC+7 khi cần tham chiếu). Tôi trình bày theo cấu trúc yêu cầu (4H gần nhất → hỗ trợ/kháng cự → xác suất → điểm vào/ra → tóm tắt chiến lược → gợi ý hành động).
+
+Tóm tắt nhanh trước: Sau nhịp tăng mạnh lên ~4,769, ETH đang điều chỉnh về ~4,654 với cây 4H gần nhất đóng cửa giảm kèm volume cao (xác nhận bán). Funding rate tăng lên 0.01% (xu hướng tăng) — thể hiện vị thế long đang chiếm ưu thế/mất cân bằng, cảnh giác pullback sâu nếu supply xuất hiện.
+
+1) Diễn biến giá (4H gần nhất)
+- Giá hiện tại (close 4H cuối): 4,653.92 USD (mốc thời gian cuối dataset: 2025-09-13 23:00 UTC)
+- Giá mở cửa 24h trước (close 2025-09-12 23:00 UTC): 4,541.98 USD
+- Thay đổi 24h: +111.94 USD → +2.46%
+- Biên độ 24h (high / low trong 24h): High = 4,769.36 USD; Low = 4,504.11 USD → biên độ nội 24h rộng (~5.71% từ low→high)
+- Mô tả hành động giá 4H gần nhất:
+  - Candle 2025-09-13 23:00: O=4,719.53 H=4,730.18 L=4,645.00 C=4,653.92, V=92,866.38
+  - Đây là cây giảm rõ (close << open) có bấc dưới xuống 4,645 → thể hiện lực bán mạnh nhưng có tìm lực mua quanh 4,645. Là cây phân phối/điều chỉnh sau nhịp tăng.
+  - Xu hướng 4H (ngắn hạn): vẫn thuộc chuỗi HH/HL từ đầu tuần (tăng ngắn hạn), nhưng momentum có dấu hiệu suy yếu/điều chỉnh sau đỉnh ~4,769.
+  - EMA slope: không có giá trị EMA tính sẵn trong dữ liệu, nhưng quan sát chuỗi giá cho thấy EMA ngắn hạn (nếu tính) sẽ dương nhưng bắt đầu giảm slope trong 2-3 cây gần nhất (giảm tốc).
+  - RSI/MACD: không có chỉ báo số, nhưng hành vi ram-up → overbought trước đó; hiện có phân phối nên MACD có thể đang hội tụ/đảo chiều trong khung 4H.
+- So sánh Volume hiện tại với trung bình 20 kỳ:
+  - Avg Volume (20 kỳ): 66,323.13
+  - Volume cây cuối: 92,866.38 → ~140% so với trung bình (tăng ~40% so với trung bình) → xác nhận động thái bán/thoát vị thế có tham gia của khối lượng lớn.
+- Open Interest (OI): không có dữ liệu OI trong tập dữ liệu (không thể phân tích trực tiếp). Hạn chế — khuyến nghị kiểm tra OI trên sàn đang giao dịch nếu cần.
+- Funding Rate:
+  - Xu hướng: tăng (từ 0.000059 → 0.000100; tăng +68.2%)
+  - Giá trị cuối: 0.000100 = 0.01% (dương) → longs đang trả phí shorts; thể hiện bias bullish/đông người long.
+  - Cảnh báo: funding tăng nhanh → tín hiệu crowding long; nếu gặp thanh khoản lớn có thể dẫn đến pullback sâu/price correction hoặc short-squeeze phụ thuộc hành vi OI.
+
+2) Hỗ trợ – Kháng cự ngắn hạn (4H)
+- Hỗ trợ 1: 4,645 USD (low cây 2025-09-13 23:00) | vùng ±0.5% → 4,622 – 4,668 USD
+- Hỗ trợ 2: 4,500 – 4,542 USD (vùng đáy/tiếp xúc nhiều 2025-09-12 23:00 → 4,504–4,541) | ghi rõ: Hỗ trợ 2: 4,500–4,542 USD
+- Kháng cự 1: vùng cluster 4,710 – 4,756 USD (nhiều close/high giữa 4,711–4,756) | Kháng cự 1: 4,710 – 4,756 USD
+- Kháng cự 2: đỉnh gần nhất 4,769.36 USD | vùng ±0.5% → 4,746 – 4,792 USD
+
+3) Xác suất diễn biến (24–72 giờ tới)
+
+| Kịch bản            | Xác suất (%) | Giải thích                                                                      |
+| ------------------- | ------------ | ------------------------------------------------------------------------------- |
+| Tăng / hồi kỹ thuật | 55%          | Chuỗi HH/HL ngắn hạn + funding dương (long crowd) và nhiều phiên volume tăng hỗ trợ hồi. Nếu giữ hỗ trợ 4,645 và có cây đảo chiều kèm volume ≥120% trung bình, khả năng hồi lên vùng 4,710–4,756 cao. |
+| Giảm / thủng hỗ trợ | 45%          | Cây giảm 4H gần nhất có volume lớn (~140% avg) và funding cao → có thể là phân phối; nếu phá 4,645 kèm volume lớn thì pullback có thể kéo về vùng 4,500–4,420 (thử thách hỗ trợ mạnh). |
+
+(Ghi chú: tỉ lệ cân bằng do xung lực tăng lớn trước đó nhưng có dấu hiệu phân phối/volume bán lớn — tình huống có thể lật nhanh phụ thuộc OI & tin tức.)
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+Lưu ý trước: ước tính ATR(14, 4H) ≈ 71 USD (tính gần đúng từ ranges 14 cây gần nhất). Dùng ATR này để thiết SL.
+
+Long Setup:
+- Entry: vùng giá 4,640 – 4,680 USD (ưu tiên buy on dip quanh Hỗ trợ 1: 4,645)
+- Stop Loss: đặt SL = Hỗ trợ 1 − 1.5×ATR → 4,645 − 1.5×71 ≈ 4,538 USD; (ngưỡng bảo hiểm chặt hơn: SL = 4,645 − 2×ATR ≈ 4,503 USD)
+- Take Profit:
+  - TP1: 4,710 – 4,756 USD (chốt 50%)
+  - TP2: 4,769 – 4,792 USD (chốt 50%)
+- Khi TP1 đạt → dời SL về break-even (entry fee/chi phí giao dịch được trừ vào).
+
+Short Setup:
+- Entry A (pullback short): nếu giá không vượt/giữ trên vùng 4,710–4,756 và xuất hiện rejection kèm volume ≥120% avg → có thể short trong vùng 4,720–4,760.
+- Entry B (breakout short): nếu giá phá thủng Hỗ trợ 1 (4,645) với volume lớn → short on break (entry ≈ 4,630–4,600).
+- Stop Loss: đặt SL = Kháng cự gần nhất + 1.5×ATR. Ví dụ short on break: SL ≈ 4,710 + 1.5×71 ≈ 4,816 USD (hoặc SL = 4,710 + 2×ATR ≈ 4,852 USD).
+- Take Profit:
+  - TP1: vùng hỗ trợ 2 (4,500–4,542) (chốt 50%)
+  - TP2: vùng 4,420–4,450 (chốt 50%)
+- Quản trị dời SL: nếu TP1 đạt → dời SL để bảo vệ lãi (ví dụ trail by 1×ATR).
+
+Position sizing: tuân thủ quy tắc rủi ro (ví dụ rủi ro tối đa mỗi trade 1–2% vốn). Tính lot theo khoảng cách SL thực tế.
+
+5) Tổng hợp chiến lược
+
+| Khung | Hỗ trợ | Kháng cự | Xu hướng | Kịch bản chính | Kịch bản phụ |
+| ----- | ------ | -------- | -------- | -------------- | ------------ |
+| 4H    | 4,645; 4,500–4,542 | 4,710–4,756; 4,769 | Tăng ngắn hạn nhưng có điều chỉnh | Hồi kỹ thuật từ 4,645 → 4,710–4,756 (55%) | Thủng 4,645 → test 4,500 (45%) |
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: tập trung theo dõi vùng 4,640–4,680 (vùng hỗ trợ 1) — mua khi có cây 4H đảo chiều rõ ràng kèm volume ≥120% trung bình 20 kỳ (ngưỡng volume xác nhận ≈ 66,323×1.2 ≈ 79,588). Nếu thấy phá 4,645 với volume lớn → ưu tiên short hoặc đứng ngoài.
+- Kiểm tra Funding Rate & OI (live): funding dương/đang tăng → cảnh giác trap tăng do crowding long; nếu funding cao tiếp tục mà OI tăng mạnh → rủi ro pullback lớn (long liquidation risk).
+- Nếu funding rate bất thường giảm nhanh → có thể là dấu hiệu longs rút lui/short squeeze đảo chiều; theo dõi tín hiệu kết hợp volume.
+- Chỉ vào lệnh khi có xác nhận volume ≥120% trung bình 20 kỳ (quy tắc của bạn).
+- Luôn để SL theo quy tắc 1.5–2×ATR và quản lý kích thước vị thế để giới hạn rủi ro vốn.
+
+Hạn chế & Khuyến nghị:
+- OI không có trong dữ liệu hiện tại — thiếu thông tin quan trọng về cấu trúc vị thế. Trước khi mở vị thế nên kiểm tra OI & funding cập nhật trên sàn bạn giao dịch.
+- Dữ liệu indicator (RSI/MACD/EMA) không được cung cấp số liệu chính xác; tôi dựa vào hành vi giá và volume. Nếu cần, tôi có thể tính EMA/RSI/MACD chính xác từ dữ liệu nến 4H nếu bạn yêu cầu (tôi sẽ cung cấp các giá trị và biểu đồ).
+
+Kết luận ngắn: bias ngắn hạn nghiêng về hồi kỹ thuật (tăng) nếu vùng 4,645 giữ và xuất hiện cây hồi kèm volume xác nhận; ngược lại, nếu phá 4,645 với volume lớn, khả năng giảm tiếp về vùng 4,500 khá cao. Funding tăng và volume lớn gần đây yêu cầu thận trọng — tuân thủ SL/ATR và xác nhận volume trước khi vào lệnh.

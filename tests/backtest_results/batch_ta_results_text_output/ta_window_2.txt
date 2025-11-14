@@ -1,0 +1,83 @@
+Dưới đây là phân tích kỹ thuật ETH theo khung 4H (dữ liệu sử dụng theo giờ Việt Nam, UTC+7) cho 24–72 giờ tới, dựa trên dữ liệu nến 4H từ 2025-05-19 → 2025-05-25. Lưu ý: dữ liệu Open Interest và Funding Rate không có sẵn nên một số phân tích về dòng tiền/tâm lý vị thế bị hạn chế.
+
+1) Diễn biến giá (4H gần nhất)
+- Giá hiện tại (close 4H gần nhất, 2025-05-25 23:00): 2,511.70 USD  
+- Giá mở cửa của cây 4H hiện tại: 2,497.91 USD  
+- Biên độ 24h (tính từ 2025-05-24 23:00 → 2025-05-25 23:00):
+  - High24 = 2,567.38 USD (2025-05-25 03:00), Low24 = 2,463.00 USD (2025-05-25 19:00) → biên độ ≈ 4.06% (H-L/H)
+  - Thay đổi giá so với cùng mốc 24h trước (close 24h trước 2,555.64) = 2,511.70 → -1.72% (giảm nhẹ trong 24h)
+- Hành động giá 4H gần nhất:
+  - Cây 4H cuối cùng: thân nhỏ tăng (O=2,497.91 → C=2,511.70) với bấc cả hai phía (H=2,524.90 / L=2,479.24) → dấu hiệu hồi nhẹ/indecision sau đợt giảm vừa qua.
+  - Diễn biến 24–72 giờ gần đây: sau đỉnh vùng 2,66x–2,72x xuất hiện pullback về 2,49x–2,56x; cấu trúc là lower-highs / higher-lows, đang trong pha sideband/nhẹ bearish ngắn hạn.
+  - EMA (độ dốc suy luận): EMA ngắn hạn chuyển sang phẳng/hướng xuống nhẹ (do giá giảm từ 2,66x), chưa thấy đà tăng chắc chắn.
+  - RSI/MACD: không có số liệu trực tiếp; tuy nhiên hành động giá + volume cho cảm giác momentum giảm so với tuần trước (khả năng RSI ở mức trung tính → hơi nghiêng về bán).
+- Volume:
+  - Volume trung bình 20 kỳ (dữ liệu): 131,691.35
+  - Volume hiện tại (last 4H): 62,833.35 → ≈ 47.7% của trung bình 20 kỳ (giảm ~52% so với trung bình) → khối lượng yếu, thiếu xác nhận mạnh cho đà hiện tại.
+- Open Interest (OI): không có dữ liệu → không thể xác định dòng tiền vị thế; cần theo dõi khi dữ liệu có sẵn.
+  - Khi có OI: nguyên tắc tham chiếu: OI ↑ + giá ↑ = dòng tiền mới / xác nhận; OI ↑ + giá ↓ = khả năng ép long/short squeeze.
+- Funding rate: không có dữ liệu → không thể cảnh báo rủi ro liên quan tới funding imbalance.
+
+2) Hỗ trợ – Kháng cự ngắn hạn
+(ghi giá kèm vùng ±0.5% để dùng làm trigger / quản trị rủi ro)
+- Hỗ trợ 1: 2,475 USD | vùng 2,462 – 2,487 (±0.5%) — vùng đáy ngắn hạn, nhiều cây nến thấp quanh đây (25‑19 low 2,463).
+- Hỗ trợ 2: 2,405 USD | vùng 2,393 – 2,417 (±0.5%) — vùng hỗ trợ sâu hơn, đáy giữa tháng 19–20.
+- Kháng cự 1: 2,555 USD | vùng 2,543 – 2,568 (±0.5%) — vùng tích tụ/đóng cửa nhiều lần (24–25/05).
+- Kháng cự 2: 2,665 USD | vùng 2,652 – 2,678 (±0.5%) — vùng high cluster (22–23/05).
+
+Ghi chú: Hỗ trợ 1 / Kháng cự 1 là các mức gần giá hiện tại, phù hợp để trade ngắn hạn.
+
+3) Xác suất diễn biến (24–72 giờ tới)
+
+| Kịch bản | Xác suất (%) | Giải thích |
+| --- | ---:| --- |
+| Tăng / hồi kỹ thuật (test kháng cự 2,555 → có thể lên 2,665 nếu breakout) | 35% | Cây 4H cuối là xanh nhỏ nhưng volume yếu → khả năng hồi kỹ thuật nếu lượng mua trở lại. Để xác nhận cần volume ≥120% trung bình 20 kỳ hoặc breakout đóng 4H trên 2,555 với volume. |
+| Giảm / thủng hỗ trợ (rơi về 2,405 hoặc thấp hơn) | 40% | Thanh khoản giảm + recent lower-highs; nhiều nến giảm trước đó, volume không xác nhận hồi → rủi ro thủng 2,475 cao hơn nếu giá tiếp tục mất momentum. |
+| Sideways / giằng co giữa 2,475 – 2,555 | 25% | Khả năng cao do thiếu volume/OI: giá đi ngang trong biên độ hẹp trước khi quyết định hướng rõ ràng. |
+
+(Phân bổ xác suất dựa trên hành vi nến 4H, volume so với bình quân, cấu trúc swing recent; thiếu dữ liệu OI/funding làm tăng biên độ không chắc chắn.)
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+Lưu ý: ATR(14) 4H ước tính từ dữ liệu cuối ~ 51 USD → dùng để tính stop loss theo 1.5–2x ATR:
+- ATR(14) 4H ≈ 51 USD → 1.5x = 76.5 USD, 2x = 102 USD.
+
+Long Setup:
+- Entry: vùng 2,480 – 2,520 USD (ưu tiên mua gần hỗ trợ 2,475 với xác nhận volume tăng hoặc break & retest >2,555 khi có volume).
+- Stop Loss: đặt theo 1.5x–2x ATR dưới hỗ trợ gần nhất.
+  - Ví dụ: nếu lấy hỗ trợ 1 = 2,475 → SL = 2,475 − 76.5 = 2,398.5 (1.5x ATR) hoặc SL = 2,373 (2x ATR). (Điều chỉnh kích thước vị thế phù hợp để rủi ro tiền vốn nhỏ.)
+- Take Profit:
+  - TP1: 2,555 (kháng cự gần nhất) — chốt 50%
+  - TP2: 2,665 (kháng cự mạnh) — chốt 50%
+- Rủi ro quản trị: khi đạt TP1 → dời SL về hòa vốn + 1–2 USD dư phòng.
+
+Short Setup:
+- Entry A (áp dụng nếu giá phá thủng hỗ trợ): vào short khi thủng và retest vùng 2,475 (break & retest fail) → entry ≈ 2,450 – 2,470.
+- Entry B (short on rejection): nếu giá không vượt 2,555 và có nến đảo/volume tăng bán tại vùng 2,543–2,568 → entry ~2,540–2,565.
+- Stop Loss: 1.5x–2x ATR trên kháng cự gần nhất.
+  - Ví dụ short từ 2,540, kháng cự gần = 2,555 → SL = 2,555 + 76.5 = 2,631.5 (1.5x ATR) hoặc +102 = 2,657.
+- Take Profit:
+  - TP1: 2,475 (chốt 50%)
+  - TP2: 2,405 (chốt 50%)
+- Khi TP1 đạt → dời SL về hòa vốn.
+
+5) Tổng hợp chiến lược
+
+| Khung | Hỗ trợ | Kháng cự | Xu hướng | Kịch bản chính | Kịch bản phụ |
+| ----- | ------ | -------- | -------- | -------------- | ------------ |
+| 4H (ngắn hạn) | 2,475 / 2,405 | 2,555 / 2,665 | Trung tính → hơi bearish | Pullback → test kháng cự 2,555 (nếu volume ↑ hồi lên) | Thủng 2,475 → kéo dài giảm về 2,405 |
+(Chiến lược: trade trong biên độ, ưu tiên giao dịch theo tín hiệu volume/OI khi có.)
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: tập trung theo dõi vùng 2,475–2,555. Chờ xác nhận trước khi vào lệnh:
+  - Mô tả xác nhận: đóng 4H trên 2,555 với volume ≥120% trung bình 20 kỳ → buy breakout.
+  - Hoặc retest & giữ vùng 2,475 với volume mua gia tăng → buy dip.
+- Nếu Funding Rate / OI cao (khi có dữ liệu) → cảnh giác trap tăng (short squeeze) hoặc trap giảm nếu skew ngược. Hiện không có dữ liệu funding/OI nên cần quan sát khi phát hành.
+- Nguyên tắc quản trị rủi ro: không dùng SL cố định tiền tệ lớn hơn 1.5–2x ATR; khối lượng lệnh điều chỉnh sao cho rủi ro per trade ≤ 1–2% vốn.
+- Chỉ vào lệnh khi có xác nhận: volume ≥120% trung bình 20 kỳ hoặc breakout/retest rõ ràng; nếu không, ưu tiên đứng ngoài.
+
+Kết luận ngắn gọn:
+- Thị trường 4H đang trong pha sideband → thiên hướng ngắn hạn nghiêng về giảm nhẹ đến sideway do volume yếu và cấu trúc lower-high. Xác suất thủng hỗ trợ 2,475 trong 24–72h nhỉnh hơn một chút nếu không có volume xác nhận hồi. Đợi volume/confirmation (hoặc dữ liệu OI/funding) trước khi take directional trade.
+
+Nếu bạn muốn, tôi có thể:
+- Tính ATR/RSI/MACD chính xác từ toàn bộ dữ liệu 4H và vẽ các EMA (21/50/200) để đưa mức entry/SL chính xác hơn; hoặc
+- Cập nhật phân tích ngay khi có dữ liệu Open Interest và Funding Rate.

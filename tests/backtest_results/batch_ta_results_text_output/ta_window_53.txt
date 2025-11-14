@@ -1,0 +1,77 @@
+Dưới đây là phân tích kỹ thuật ngắn hạn (24–72 giờ) cho ETH theo dữ liệu 4H bạn cung cấp. Tất cả thời gian đã quy về giờ Việt Nam (UTC+7).
+
+Tổng quan dữ liệu nguồn cuối: dữ liệu 4H tới 2025-10-25 23:00 UTC (tương đương 2025-10-26 06:00 UTC+7).
+
+1) Diễn biến giá (4H gần nhất)
+- Giá hiện tại (Close cuối cùng): 3932.71 USD (4H candle 2025-10-25 23:00 UTC)
+- Giá mở cửa của candle hiện tại: 3940.32 USD
+- Biên độ 24h: High = 3969.22 USD (2025-10-25 20:00 UTC), Low = 3912.40 USD (2025-10-25 11:00 UTC). Thay đổi 24h (hiện so với đóng cửa 24h trước 3888.92): +1.13%.
+
+- Hành động giá 4H gần nhất:
+  * Candle cuối là thân đỏ nhỏ (open 3940.32 → close 3932.71) cho thấy sự rút bớt lực tăng ở khung 4H.
+  * Trong 24-48 giờ vừa qua có nỗ lực phá lên vùng ~3950–3970 nhưng bị kháng cự, tạo series higher-lows nhẹ quanh 3920–3940 → cấu trúc ngắn hạn trung tính-hơi bull nhưng thiếu confirmation.
+  * EMA ngắn hạn/ trung hạn (quan sát hành vi giá): độ dốc không rõ rệt — không có xu hướng tăng mạnh (sideways → slight upward bias). (Không có dữ liệu EMA/RSI/MACD số học chính xác trong dữ liệu đầu vào; nếu cần tôi có thể tính thêm.)
+
+- Volume:
+  * Volume candle cuối: 24,666 ≈ 34% của trung bình 20 kỳ (AVG ≈ 71,693). => Volume giảm mạnh so với bình thường (giảm ~65%). Kết luận: hành động giá gần nhất không được xác nhận bởi khối lượng; tín hiệu yếu.
+
+- Open Interest (OI):
+  * OI (USD) biến động nhẹ, tổng thay đổi giai đoạn là +0.08% (coin OI +0.45%) → OI khá ổn định.
+  * Diễn giải: OI ổn định cùng giá hơi tăng → không có dòng tiền lớn mới đổ vào; nghiêng về hành động phân phối/sideways hoặc giao dịch lấy thanh khoản hơn là breakout có dòng tiền mới.
+
+- Funding rate:
+  * Xu hướng giảm từ ~0.0062% xuống ~0.0015% (giảm ~75%). Mức hiện tại rất thấp -> áp lực long giảm; rủi ro short-squeeze thấp. Nói cách khác: tâm lý hợp đồng tương lai không quá hướng long.
+
+2) Hỗ trợ – Kháng cự ngắn hạn (vùng ±0.5%)
+- Hỗ trợ 1: 3920 (vùng 3910–3930) | Kháng cự 1: 3960 (vùng 3940–3980)
+- Hỗ trợ 2: 3855 (vùng 3835–3875) | Kháng cự 2: 4050 (vùng 4029–4070)
+
+Ghi chú: các mức này dựa trên nhiều chạm vùng giá (lows/highs và nơi có volume spike).
+
+3) Xác suất diễn biến (24–72 giờ tới)
+
+| Kịch bản            | Xác suất (%) | Giải thích                                                                                  |
+| ------------------- | ------------ | ------------------------------------------------------------------------------------------- |
+| Tăng / hồi kỹ thuật | 55%          | Giá giữ trên ~3920, có higher-low gần đây; nếu breakout lên >3960 với volume tăng thì có thể test 4050. OI ổn định và funding giảm làm cho breakout thiếu lực mạnh, nên là “hồi kỹ thuật” hơn là bứt phá mạnh. |
+| Giảm / thủng hỗ trợ | 45%          | Volume thấp + funding giảm + OI không tăng → lực mua yếu. Nếu phá đóng 4H <3910 với volume tăng/OI tăng sẽ dễ kéo về 3855 hoặc thấp hơn (3780). Xác suất thủng không thấp do thiếu confirmation tăng. |
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+Lưu ý: ATR(14) 4H không được cung cấp trực tiếp — tôi ước lượng ATR(14) ≈ 70–100 USD dựa trên biên độ nến 4H gần đây. Dùng khoảng này để tính stop.
+
+Long Setup:
+- Entry: vùng 3920–3950 (ưu tiên buy on pullback gần hỗ trợ 3920 hoặc break & retest >3960)
+- Stop Loss: 1.5x–2x ATR(14) dưới hỗ trợ gần nhất.
+  * Nếu ATR ≈ 85 USD → Stop ≈ 3920 − (1.5×85)=≈ 3787 → hoặc −(2×85)=≈ 3750. (dùng mức chính xác ATR từ chart của bạn)
+- Take Profit:
+  * TP1: 3960 (chốt ~50%)
+  * TP2: 4050 (chốt 50%)
+- Quản lý: Khi TP1 đạt → dời SL về hòa vốn (break-even) + trailing theo swing low.
+
+Short Setup:
+- Entry: vùng 3955–3975 (gần kháng cự 3960–3980) hoặc trên 4050 nếu price rejection mạnh.
+- Stop Loss: 1.5x–2x ATR(14) trên kháng cự gần nhất.
+  * Ví dụ ATR ≈85 → Stop ≈ 3970 + 127.5 = ~4097 (tùy mức entry)
+- Take Profit:
+  * TP1: 3920 (chốt 50%)
+  * TP2: 3855 (chốt 50%)
+- Quản lý: dời SL về hòa vốn sau TP1; giảm tỷ lệ lệnh nếu OI giảm/volume sụt.
+
+5) Tổng hợp chiến lược
+
+| Khung | Hỗ trợ      | Kháng cự    | Xu hướng           | Kịch bản chính      | Kịch bản phụ        |
+| ----- | ----------- | ----------- | ------------------ | ------------------- | --------------------|
+| 4H    | 3920 / 3855 | 3960 / 4050 | Trung tính → nhẹ bull | Hồi kỹ thuật lên 3960→4050 nếu volume xác nhận | Thủng 3920 → test 3855, tiếp tục side/giảm |
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: theo dõi vùng 3920–3960. Chỉ vào lệnh khi có xác nhận volume ≥120% trung bình 20 kỳ (AVG20 ≈ 71,693 → threshold ≈ 86,032) hoặc có breakout kèm OI tăng rõ rệt.
+- Nếu Funding Rate vẫn thấp và giảm → cảnh giác breakout thiếu lực (có thể là “fake breakout”).
+- OI ổn định → breakout bền cần OI tăng (dòng tiền mới). Nếu thấy giá lên + OI tăng → xác suất bứt phá cao hơn.
+- Không mua đuổi ở vùng 3960–3980 nếu volume thấp; ưu tiên buy on pullback hoặc break+retest với volume/OI xác nhận.
+- Nếu bạn trade margin/leverage: giữ leverage thấp do funding đang thấp nhưng biến động có thể xảy ra (các cây nến lớn từng xuất hiện).
+
+Kết luận ngắn gọn:
+- Thị trường ngắn hạn trung tính — có thiên hướng hồi nhẹ nhưng thiếu confirmation (volume thấp, OI ổn định, funding giảm). Quan trọng là chờ volume/OI xác nhận khi giá tiếp cận 3960 hoặc thủng 3920 trước khi quyết định vị thế có tỷ trọng lớn.
+
+Nếu bạn muốn, tôi có thể:
+- Tính chính xác ATR(14), EMA(20/50) và RSI/MACD từ dữ liệu 4H để đưa mức stop/take profit số hóa chính xác.
+- Vẽ biểu đồ với các mức hỗ trợ/kháng cự và các điểm entry/exit cụ thể.

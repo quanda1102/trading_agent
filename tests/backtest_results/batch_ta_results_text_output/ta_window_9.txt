@@ -1,0 +1,77 @@
+Dưới đây là phân tích kỹ thuật ETH theo khung 4H cho 24–72 giờ tới, dựa trên dữ liệu 4H (2025-06-09 → 2025-06-15) bạn cung cấp. Giờ sử dụng: giờ Việt Nam (UTC+7). Lưu ý: dữ liệu Open Interest và Funding rate không có trong dataset — điều này làm giảm độ chắc chắn đối với phân tích dòng tiền phái sinh.
+
+1) Diễn biến giá (4H gần nhất)
+- Giá hiện tại (close candle 2025-06-15 23:00): 2,541.81 USD  
+- Giá mở cửa (candle hiện tại): 2,516.10 USD  
+- Biên độ dao động 24h: high = 2,554.96, low = 2,488.72 → vùng 2,488.72–2,554.96.  
+  - Thay đổi từ giá mở 24h trước (open 2025-06-14 23:00 = 2,538.51) → hiện tại ≈ +0.13%.
+
+Hành động giá 4H gần nhất:
+- Candle 23:00 (hiện tại): thân tăng (O=2,516.10 → C=2,541.81), đóng gần mid–upper, có bóng trên tới 2,554.96 → biểu hiện mua nhưng chưa mạnh (bóng trên cho thấy có bán quanh vùng cao).  
+- Xu hướng ngắn hạn (4H): sau cú dump mạnh (13/06) giá đã hồi lên vùng 2,500–2,600 và đang sideway/khả năng hồi nhẹ. EMA 4H (quan sát bằng trực quan từ chuỗi nến): đường trung bình ngắn hạn đang bằng phẳng tới hơi dốc lên — không có lực tăng rõ ràng.  
+- Momentum: có các cây nến tăng mạnh kèm volume lớn vào 10–11/06 và cây giảm cực mạnh 11–13/06 → pha biến động cao đã qua, momentum hiện tại ở trạng thái trung tính → cần xác nhận bằng volume để có xu hướng rõ ràng.
+
+Volume & so sánh với trung bình 20 kỳ:
+- Trung bình volume (data cung cấp): ~120,907.  
+- Volume candle hiện tại = 63,323 → ~52% của trung bình → Volume giảm, KHÔNG xác nhận đà tăng hiện tại. (Kết luận: move tăng gần đây thiếu khối lượng hỗ trợ).
+
+Open Interest (OI):
+- Không có dữ liệu OI trong dataset → không thể đánh giá dòng tiền phái sinh. Thiếu OI làm giảm độ tin cậy về việc phân biệt “dòng tiền mới” hay “trap”.
+
+Funding Rate:
+- Không có dữ liệu funding rate → không thể cảnh báo mức funding cụ thể.
+
+2) Hỗ trợ – Kháng cự ngắn hạn (4H)
+- Hỗ trợ 1: 2,490 (vùng 2,490 ±0.5% → 2,477–2,502) | Kháng cự 1: 2,550 (vùng 2,550 ±0.5% → 2,537–2,563)  
+- Hỗ trợ 2: 2,437 (vùng 2,437 ±0.5% → 2,425–2,449) | Kháng cự 2: 2,770 (vùng 2,770 ±0.5% → 2,756–2,784)
+
+Ghi chú: các mức trên được rút ra từ đáy/đỉnh 4H gần nhất: đáy 2,488.72 (03:00 15/06), đáy sâu 2,436.98 (13/06), đỉnh gần 2,554.96 (15/06) và vùng 2,73–2,79 là cụm đỉnh kháng cự trước đó.
+
+3) Xác suất diễn biến (24–72 giờ tới)
+
+| Kịch bản            | Xác suất (%) | Giải thích                                                                      |
+| ------------------- | ------------ | ------------------------------------------------------------------------------- |
+| Tăng / hồi kỹ thuật | 55%          | Giá đang trong vùng phục hồi sideway; EMA 4H hơi bằng phẳng→có thể test lại 2,550. Tuy nhiên volume hiện thấp → cần volume lớn (>120% trung bình 20 kỳ) để xác nhận breakout. |
+| Giảm / thủng hỗ trợ | 45%          | Thanh khoản thấp + lịch sử dump lớn gần đây (cây nến 13/06) cho thấy rủi ro tiếp tục bị bán nếu gặp kháng cự mạnh. Thiếu OI/funding làm tăng nguy cơ trap/flash dump. |
+
+(Phân bố gần cân bằng do volume thấp và thiếu số liệu phái sinh; xác suất có thể dịch chuyển nhanh nếu có candle 4H có volume >=120% trung bình 20 kỳ.)
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+- Tính ATR(14) trên khung 4H (ước lượng từ dữ liệu 14 cây 4H gần nhất): ATR(14) ≈ 38.7 USD.  
+  → 1.5×ATR ≈ 58 USD; 2×ATR ≈ 77 USD.
+
+Long Setup:
+- Entry: vùng pullback 2,500–2,520 (mua dip) HOẶC breakout xác nhận trên 2,555–2,565 kèm volume tăng ≥120% so với trung bình 20 kỳ.  
+- Stop Loss: đặt dưới Hỗ trợ gần nhất (2,490) trừ 1.5×ATR → SL ≈ 2,490 − 58 ≈ 2,432 (khoảng tham chiếu). (Nếu muốn an toàn hơn dùng 2×ATR → SL ≈ 2,413.)  
+- Take Profit:
+  - TP1: 2,550 (chốt 50%)  
+  - TP2: 2,770 (chốt 50%)  
+- Khi TP1 đạt → dời SL về hòa vốn.
+
+Short Setup:
+- Entry: rejection ở vùng kháng cự 2,550–2,565 (kênh sideway) hoặc break down đóng dưới 2,490 kèm volume tăng.  
+- Stop Loss: 1.5×–2×ATR trên kháng cự gần nhất (ví dụ short tại 2,550 → SL ≈ 2,550 + 58 ≈ 2,608; hoặc +77 → 2,627).  
+- Take Profit:
+  - TP1: 2,490 (chốt 50%)  
+  - TP2: 2,437 (chốt 50%)  
+- Khi TP1 đạt → dời SL về hòa vốn.
+
+Kích thước lệnh: khuyến nghị risk per trade ≤1–2% vốn; dùng SL khoảng 1.5–2×ATR để tính kích cỡ lệnh.
+
+5) Tổng hợp chiến lược
+
+| Khung | Hỗ trợ | Kháng cự | Xu hướng | Kịch bản chính | Kịch bản phụ |
+| ----- | ------ | -------- | -------- | -------------- | ------------ |
+| 4H    | 2,490; 2,437 | 2,550; 2,770 | Trung tính → nhẹ tăng (sideway hồi) | Hồi kỹ thuật tới 2,550 → test 2,770 nếu volume lớn | Thất bại tại 2,550 → thủng 2,490 về 2,437 |
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: tập trung theo dõi vùng 2,540–2,555 với điều kiện volume xác nhận (volume candle 4H ≥120% trung bình 20 kỳ ~ ≥145k) để vào BUY breakout. Nếu chỉ là candle tăng với volume thấp → tránh buy breakout (dễ bị fakeout).  
+- Nếu Funding Rate cao (không có data) → cảnh giác trap tăng; nếu Funding Rate thấp bất thường → đề phòng short squeeze. Vì thiếu data phái sinh, cần đặc biệt thận trọng khi trade đòn bẩy.  
+- Chỉ vào lệnh khi có xác nhận volume ≥120% trung bình 20 kỳ hoặc một nến giảm/ tăng mạnh kèm đóng cửa rõ ràng dưới/ trên mức hỗ trợ/kháng cự.  
+- Nếu giữ lệnh: luôn dời SL về breakeven khi đạt TP1; tuân thủ sizing dựa trên ATR để giới hạn rủi ro.
+
+Kết luận ngắn: hiện tại ETH đang trong giai đoạn hòa/sideway trên mức 2,500–2,550; triển vọng 24–72h nghiêng nhẹ về hồi kỹ thuật nhưng thiếu volume và thiếu dữ liệu phái sinh (OI/funding) làm tăng rủi ro trap. Hành động tốt nhất là chờ volume/ breakout xác nhận hoặc mua dip gần hỗ trợ với SL rõ ràng theo ATR.
+
+Nếu muốn tôi có thể:
+- Tính lại ATR/MA chính xác trên toàn bộ 4H với con số chi tiết; hoặc
+- Vẽ các vùng hỗ trợ/kháng cự trên chart 4H và gợi ý điểm vào/ra trực quan. Bạn muốn tiếp tục phần nào?

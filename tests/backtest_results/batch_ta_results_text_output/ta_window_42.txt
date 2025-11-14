@@ -1,0 +1,63 @@
+Dưới đây là phân tích kỹ thuật ETH khung 4H (giờ Việt Nam UTC+7) cho 24–72 giờ tới, dựa trên dữ liệu 4H từ 2025-09-16 → 2025-09-22 (candle cuối 2025-09-22 23:00 UTC = 2025-09-23 06:00 VN).  
+
+1) Diễn biến giá (4H gần nhất)
+- Giá hiện tại (close candle 4H gần nhất, 2025-09-22 23:00 UTC / 2025-09-23 06:00 VN): 4,167.88 USD  
+- Giá mở cửa 24h trước (candle 2025-09-22 03:00 UTC = 4,482.80 USD) → Thay đổi 24h: (4,167.88 − 4,482.80) / 4,482.80 ≈ −7.03%  
+- Biên độ 24h: High = 4,498.16 (03:00), Low = 4,077.00 (15:00)  
+- Mô tả hành động giá 4H gần nhất:
+  - Xu hướng ngắn hạn: giảm mạnh, break xuống trong ngày (cú sập lớn ở 11:00 và 15:00 với hai candle biên độ lớn, sau đó là hồi yếu và tiếp tục áp lực bán).  
+  - Candle 4H cuối: mở 4,181.63 → close 4,167.88 = bearish candle với bóng dưới nhỏ (áp lực bán vẫn chiếm ưu thế).  
+  - EMA (quan sát độ dốc sơ bộ): EMA 4H ngắn hạn đang hướng xuống (do chuỗi đóng cửa giảm từ ~4,494 → 4,168 trong 1–2 ngày).  
+  - Momentum (gián tiếp): có khả năng RSI đang thoát pha từ vùng trung lập/vừa rơi; MACD khả năng cho phân kỳ giảm — (chú ý: không có số liệu RSI/MACD chính xác trong dữ liệu, đây là suy đoán dựa trên hành vi giá/volume).
+- Volume so với trung bình 20 kỳ:
+  - Avg Volume (20 kỳ) = 56,037.31  
+  - Volume candle cuối = 87,845.15 → ~157% so với trung bình (tăng ~+57%) → xác nhận đà bán chủ động/khối lượng bán lớn. Trước đó có 2 candle rất lớn (≈197k & 216k) cho thấy bán tháo mạnh.
+- OI: Không có dữ liệu Open Interest (không thể phân tích tương quan OI ↔ giá).
+- Funding rate:
+  - Xu hướng funding: giảm nhiều (từ 0.000045 → 0.000005, giảm ~88.8%). Trung bình ~0.000019.  
+  - Hiện tại funding rất thấp (gần 0) và có các lần âm trong thời gian ngắn → market sentiment không quá nghiêng về long; không có áp lực long mạnh (giảm nguy cơ short-squeeze do funding dương cao), nhưng biến động funding cho thấy luân chuyển vị thế liên tục.
+
+2) Hỗ trợ – Kháng cự ngắn hạn (vùng ±0.5%)
+- Hỗ trợ 1: 4,159.16 (cận đáy candle 23:00) | vùng ±0.5% → 4,138 – 4,179 USD  
+- Hỗ trợ 2: 4,077.00 (đáy 15:00, 24h low) | vùng ±0.5% → 4,057 – 4,097 USD  
+- Kháng cự 1: 4,305.87 (close 11:00) | vùng ±0.5% → 4,284 – 4,327 USD  
+- Kháng cự 2: 4,498.16 (đỉnh 03:00) | vùng ±0.5% → 4,476 – 4,520 USD
+
+Ghi chú: Hỗ trợ 1 / Kháng cự 1 được liệt kê cùng nhau để tiện đối chiếu: Hỗ trợ 1: 4,159.16 | Kháng cự 1: 4,305.87
+
+3) Xác suất diễn biến (24–72 giờ tới)
+
+| Kịch bản | Xác suất (%) | Giải thích |
+| --- | ---:| --- |
+| Tăng / hồi kỹ thuật (hồi mạnh lên 4,305–4,330) | 35% | Có thể xuất hiện bounce phản ứng kỹ thuật từ vùng 4,077–4,159 do quá bán ngắn hạn; tuy nhiên volume bán lớn và funding giảm làm giảm xác suất hồi bền. Hồi có thể diễn ra nhưng dễ gặp kháng cự mạnh ở ~4,305. |
+| Giảm / thủng hỗ trợ (thủng 4,077 → test vùng thấp hơn) | 65% | Áp lực bán mạnh (2 candle khối lượng cực lớn) + volume hiện tại >150% trung bình cho thấy phe bán vẫn chủ động. Funding giảm/âm theo phiên cho thấy long ít đỡ giá; thiếu dữ liệu OI nhưng hành động giá và volume nghiêng về tiếp tục giảm. |
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+- Tính ATR(14) 4H (ước tính từ 14 kỳ gần nhất): ~64 USD → 1.5x = ~96 USD, 2x = ~128 USD.
+- Long Setup:
+  - Entry (aggressive): mua dip vùng 4,160 – 4,190 (gần Hỗ trợ 1) nếu có dấu hiệu đảo nhẹ (candle 4H đóng xanh + volume giảm so với các cây trước or volume mua ≥120% avg confirming).  
+  - Entry (conservative): chờ reclaim & đóng 4H > 4,305 (kháng cự 1) trước khi bắt long.  
+  - Stop Loss: đặt dưới Hỗ trợ 1 theo 1.5–2x ATR → SL = 4,159 − 96 = ~4,063 (1.5x) hoặc SL = 4,159 − 128 = ~4,031 (2x).  
+  - Take Profit: TP1 = 4,305 (chốt 50%), TP2 = 4,498 (chốt 50%). Khi TP1 đạt → dời SL về hòa vốn.
+- Short Setup:
+  - Entry (aggressive): nếu phá xuống dưới 4,077 với candle đóng mạnh → short on breakdown. Hoặc (nếu không phá ngay) short khi hồi lên vùng 4,284–4,327 (kháng cự 1 zone) và có dấu hiệu thất bại (doji/pinbar + volume bán tăng).  
+  - Stop Loss: đặt trên Kháng cự gần nhất theo 1.5–2x ATR → ví dụ short tại 4,300; SL = 4,327 + 96 = ~4,423 (1.5x) hoặc +128 => ~4,455 (2x).  
+  - Take Profit: TP1 = 4,159 (chốt 50%), TP2 = 4,077 (chốt 50%). Khi TP1 đạt → dời SL về hòa vốn.
+
+5) Tổng hợp chiến lược
+
+| Khung | Hỗ trợ | Kháng cự | Xu hướng | Kịch bản chính | Kịch bản phụ |
+| ----- | ------ | -------- | -------- | -------------- | ------------ |
+| 4H | 4,159 / 4,077 | 4,306 / 4,498 | Giảm ngắn hạn | Tiếp tục giảm → test/ thủng 4,077 (65%) | Hồi kỹ thuật lên ~4,305 rồi tiếp tục side/retest (35%) |
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: tập trung theo dõi vùng 4,057–4,179 (vùng hỗ trợ 1–2) với điều kiện volume xác nhận (yêu cầu volume mua ≥120% trung bình 20 kỳ để bắt đầu long). Nếu chỉ thấy volume bán lớn (≥120% avg) thì ưu tiên giao dịch theo chiều bán.  
+- Nếu Funding Rate tăng mạnh dương bất ngờ → cảnh giác trap tăng (rủi ro short-squeeze), hiện funding đang giảm → không có áp lực long lớn.  
+- Do không có dữ liệu OI, cần thận trọng: absence of OI = thiếu thông tin về vị thế đòn bẩy; ưu tiên quản trị rủi ro chặt (SL theo ATR như trên).  
+- Chỉ vào lệnh khi có xác nhận (ví dụ: cho long cần 1 candle 4H đóng trên hỗ trợ với volume giảm bán hoặc volume mua ≥120% avg; cho short cần phá hỗ trợ kèm volume lớn hoặc hồi thất bại kèm volume tăng).
+
+Kết luận nhanh: Cấu trúc thị trường 4H đang nghiêng giảm (selling pressure rõ rệt, volume lớn), xác suất cao hơn cho việc tiếp tục kiểm tra vùng 4,077 và thấp hơn cho hồi phục bền vững. Nếu bạn trade short hãy ưu tiên vào lệnh khi có phá vững vùng hỗ trợ; nếu trade long nên chờ tín hiệu xác nhận (reclaim kháng cự hoặc volume mua lớn ở hỗ trợ) và luôn dùng SL theo ATR (1.5–2x).
+
+Nếu muốn, tôi có thể:
+- Vẽ các mức cụ thể lên biểu đồ 4H (VN time).  
+- Tính RSI/MACD & EMA chính xác trên dữ liệu để bổ sung (nếu bạn cung cấp hoặc cho phép tôi tính trực tiếp).

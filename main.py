@@ -12,6 +12,7 @@ import logging
 from trading_agent_tp.api.multi_agent_endpoints import router as multi_agent_router
 from trading_agent_tp.api.simple_agent_endpoints import router as simple_agent_router
 from trading_agent_tp.api.file_proxy_endpoints import router as file_proxy_router
+from trading_agent_tp.api.alert_agent_endpoints import router as alert_agent_router
 
 # Configure logging
 logging.basicConfig(
@@ -76,6 +77,7 @@ app.add_middleware(
 app.include_router(multi_agent_router)
 app.include_router(simple_agent_router)
 app.include_router(file_proxy_router)
+app.include_router(alert_agent_router)
 
 # Root endpoint
 @app.get("/")

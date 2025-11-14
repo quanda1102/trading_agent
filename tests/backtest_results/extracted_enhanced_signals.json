@@ -1,0 +1,4244 @@
+[
+  {
+    "time_info": {
+      "candle_time": "2025-05-19 23:00",
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "2417.58",
+      "high": "2473.70",
+      "low": "2383.80",
+      "close": "2466.63",
+      "volume": "153649.80"
+    },
+    "market_context": {
+      "current_price": "2466.63",
+      "24h_high": "2587.61",
+      "24h_low": "2323.21",
+      "24h_change_pct": "-4.36",
+      "volume_vs_avg": "118.8%",
+      "avg_volume_20": "129339.75"
+    },
+    "long_setup": {
+      "entry": "2430-2470",
+      "entry_type": "aggressive",
+      "stop_loss": "2315",
+      "stop_loss_alt": "2287",
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "2"
+    },
+    "short_setup": {
+      "entry": "2560-2610",
+      "entry_type": null,
+      "stop_loss": "2673",
+      "stop_loss_alt": "2701",
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2400",
+        "zone": "2388-2412"
+      },
+      {
+        "level": "Support_2",
+        "price": "2323",
+        "zone": "2311-2334"
+      },
+      {
+        "level": "Support_1",
+        "price": "2400",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2588",
+        "zone": "2575-2601"
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2738",
+        "zone": "2724-2752"
+      },
+      {
+        "level": "Resistance_1",
+        "price": "2588",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "50%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "30%"
+      }
+    ],
+    "custom_id": "ta_window_0",
+    "batch_id": "batch_req_690d58c62b88819087d63ba8a5815a56",
+    "created_at": 1762482325
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "2650.75",
+      "high": "2679.99",
+      "low": "2623.14",
+      "close": "2664.48",
+      "volume": "143113.82"
+    },
+    "market_context": {
+      "current_price": "2664.48",
+      "24h_high": "2692.99",
+      "24h_low": "2452.20",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": "00"
+    },
+    "long_setup": {
+      "entry": "2570-2600",
+      "entry_type": null,
+      "stop_loss": "2418",
+      "stop_loss_alt": null,
+      "tp1": "2693",
+      "tp2": "2780",
+      "atr_multiplier": "2"
+    },
+    "short_setup": {
+      "entry": "2695-2730",
+      "entry_type": null,
+      "stop_loss": "2800",
+      "stop_loss_alt": null,
+      "tp1": "2525",
+      "tp2": "2470",
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2525",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2470",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2693",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2780",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_1",
+    "batch_id": "batch_req_690d58c63a788190960cf6f30d1bacc7",
+    "created_at": 1762482172
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": "131691.35"
+    },
+    "long_setup": {
+      "entry": "2480-2520",
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2555",
+      "tp2": "2665",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2475",
+      "tp2": "2405",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2475",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2405",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2555",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2665",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật (test kháng cự 2,555 → có thể lên 2,665 nếu breakout)",
+        "probability": "35%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (rơi về 2,405 hoặc thấp hơn)",
+        "probability": "40%"
+      },
+      {
+        "scenario": "Sideways / giằng co giữa 2,475 – 2,555",
+        "probability": "25%"
+      }
+    ],
+    "custom_id": "ta_window_2",
+    "batch_id": "batch_req_690d58c63be08190b5f0b26ab2d36667",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "2656.99",
+      "high": "2689.14",
+      "low": "2613.20",
+      "close": "2626.90",
+      "volume": "163925.61"
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "2712.36",
+      "24h_low": "2608.50",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2689-2712",
+      "tp2": "2734",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2510-2530",
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2608",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2510",
+        "zone": null
+      },
+      {
+        "level": "Support_1",
+        "price": "2608",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2689",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2734",
+        "zone": null
+      },
+      {
+        "level": "Resistance_1",
+        "price": "2689-2712",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "35%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "65%"
+      }
+    ],
+    "custom_id": "ta_window_3",
+    "batch_id": "batch_req_690d58c629d081909a0ca23f66262ea1",
+    "created_at": 1762482175
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "2519.61",
+      "high": "2550.14",
+      "low": "2515.95",
+      "close": "2536.30",
+      "volume": "66920."
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "2604.28",
+      "24h_low": "2475.33",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2550",
+      "tp2": "2626-2687",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2516",
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2516",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2475",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2550",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2626",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "40%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "60%"
+      }
+    ],
+    "custom_id": "ta_window_4",
+    "batch_id": "batch_req_690d58c65cc081909a061670616a1286",
+    "created_at": 1762482192
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": "2600-2630",
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2655",
+      "tp2": "2788",
+      "atr_multiplier": "1.5"
+    },
+    "short_setup": {
+      "entry": "2640-2670",
+      "entry_type": "short",
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2524",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2468",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2655",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2788",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật tiếp tục (test/đột phá 2,655 → retest 2,700+)",
+        "probability": "55%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (pullback mạnh về 2,525 → 2,468)",
+        "probability": "35%"
+      },
+      {
+        "scenario": "Side-range (đi ngang giữa 2,525–2,655)",
+        "probability": "10%"
+      }
+    ],
+    "custom_id": "ta_window_5",
+    "batch_id": "batch_req_690d58c646348190be56bd7fb4f750a1",
+    "created_at": 1762482172
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": "2509.63",
+      "24h_high": null,
+      "24h_low": "2640.86",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2628",
+      "tp2": "2678",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2455",
+      "tp2": "2400",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2455",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2400",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2628",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2678",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật (hồi về 2,600–2,630)",
+        "probability": "40%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (phá 2,455 → test 2,400 hoặc thấp hơn)",
+        "probability": "60%"
+      }
+    ],
+    "custom_id": "ta_window_6",
+    "batch_id": "batch_req_690d58c620b4819090a5144a4c97ca30",
+    "created_at": 1762482172
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "2541.78",
+      "high": "2548.90",
+      "low": "2509.94",
+      "close": "2534.11",
+      "volume": "85277."
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "2548.90",
+      "24h_low": "2477.73",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2549",
+      "tp2": "2620",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2549",
+      "tp2": "2480-2440",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2480",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2440",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2549",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2620",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_7",
+    "batch_id": "batch_req_690d58c643d0819093773e20e8f5aa7e",
+    "created_at": 1762482172
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "2729.80",
+      "high": "2773.21",
+      "low": "2711.94",
+      "close": "2719.79",
+      "volume": "146462.32"
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "2879.22",
+      "24h_low": "2711.94",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": "1.35"
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2775",
+      "tp2": "2865",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2655",
+      "tp2": null,
+      "atr_multiplier": "0.5"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2712",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2655",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2775",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2865",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật (bounce từ Hỗ trợ 1 → test Kháng cự 1 ~2,775)",
+        "probability": "35%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (thủng 2,712 → mở rộng về 2,655 hoặc thấp hơn)",
+        "probability": "65%"
+      }
+    ],
+    "custom_id": "ta_window_8",
+    "batch_id": "batch_req_690d58c627748190a4d3cf6f6dac867f",
+    "created_at": 1762482202
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2550",
+      "tp2": "2770",
+      "atr_multiplier": "1.5"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2490",
+      "tp2": "2437",
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2490",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2437",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2550",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2770",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "55%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "45%"
+      }
+    ],
+    "custom_id": "ta_window_9",
+    "batch_id": "batch_req_690d58c63d108190a08cf40e701c23fd",
+    "created_at": 1762482183
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "2513.86",
+      "high": "2538.70",
+      "low": "2465.78",
+      "close": "2508.96",
+      "volume": "143304.88"
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2545",
+      "tp2": "2620",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2490",
+      "tp2": "2455",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2490",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2455",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2545",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2620",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "62%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "38%"
+      }
+    ],
+    "custom_id": "ta_window_10",
+    "batch_id": "batch_req_690d58c6d4008190854bc04e858d9394",
+    "created_at": 1762482172
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "2442.75",
+      "high": "2445.20",
+      "low": "2412.29",
+      "close": "2423.59",
+      "volume": "49701.54"
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": "62%",
+      "avg_volume_20": "49701.54"
+    },
+    "long_setup": {
+      "entry": "2410-2440",
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": "2485-2520",
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2410",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2360",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2488",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2550",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "30%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "70%"
+      }
+    ],
+    "custom_id": "ta_window_11",
+    "batch_id": "batch_req_690d58c6cde4819094d79a2b3f8d8a7b",
+    "created_at": 1762482186
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "2454.73",
+      "24h_low": "2188.00",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2443-2467",
+      "tp2": "2546-2579",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2385-2405",
+      "tp2": "2245-2265",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2385",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2245",
+        "zone": null
+      },
+      {
+        "level": "Support_1",
+        "price": "2385-2405",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2443",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2546",
+        "zone": null
+      },
+      {
+        "level": "Resistance_1",
+        "price": "2443-2467",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi tiếp tục",
+        "probability": "55%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "45%"
+      }
+    ],
+    "custom_id": "ta_window_12",
+    "batch_id": "batch_req_690d58c6d1648190908ecd1deae6d370",
+    "created_at": 1762482219
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": "2410-2425",
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2460",
+      "tp2": "2520",
+      "atr_multiplier": "2"
+    },
+    "short_setup": {
+      "entry": "2448-2472",
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2415",
+      "tp2": "2380",
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2415",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2380",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2460",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2520",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [],
+    "custom_id": "ta_window_13",
+    "batch_id": "batch_req_690d58c6cfa48190a1d43654a2b4528f",
+    "created_at": 1762482198
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "2458.51",
+      "high": "2488.00",
+      "low": "2431.00",
+      "close": "2474.78",
+      "volume": "95201.23"
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "2525.00",
+      "24h_low": "2412.00",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {},
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": "2574",
+      "stop_loss_alt": null,
+      "tp1": "2450",
+      "tp2": "2412",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2450",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2412",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2500",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2525",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "50%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "30%"
+      }
+    ],
+    "custom_id": "ta_window_14",
+    "batch_id": "batch_req_690d58c6c604819087da31c4d70b4bcc",
+    "created_at": 1762482222
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "2635.50",
+      "24h_low": "2495.03",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": "65599.28"
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2618",
+      "tp2": "2635-2700",
+      "atr_multiplier": "1.5"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2560",
+      "tp2": "2495",
+      "atr_multiplier": "1.5"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2560",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2495",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2618",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2635",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_15",
+    "batch_id": "batch_req_690d58c6c9dc819098b3bde737ae1cab",
+    "created_at": 1762482229
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": "143%",
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2605",
+      "tp2": "2635",
+      "atr_multiplier": "2"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2515",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2490",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2605",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2635",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "62%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "38%"
+      }
+    ],
+    "custom_id": "ta_window_16",
+    "batch_id": "batch_req_690d58c6efa0819092fe6dfc60c4feba",
+    "created_at": 1762482256
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "2"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2610",
+      "tp2": "2540",
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2610",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2540",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2675",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "2700",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật (tiếp diễn breakout lên trên 2,675 → 2,700+)",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (retest và thủng 2,610 → về 2,540)",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_17",
+    "batch_id": "batch_req_690d58c709f4819089fd8a67f9ebba94",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "3010.39",
+      "24h_low": "2903.85",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {},
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "2900",
+      "tp2": "2768",
+      "atr_multiplier": "1.5"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2900",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2768",
+        "zone": null
+      },
+      {
+        "level": "Support_1",
+        "price": "2904",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "2968-2980",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "3010-3040",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_18",
+    "batch_id": "batch_req_690d58c6d6688190bf60c368ed241e46",
+    "created_at": 1762482269
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {},
+    "short_setup": {},
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "2960-2975",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "2903-2935",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "3052-3082",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "3120-3200",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật (tiếp tục breakout lên >3,08k → test 3,12–3,20k)",
+        "probability": "65%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (pullback về 2,96k–2,90k hoặc sâu hơn)",
+        "probability": "35%"
+      }
+    ],
+    "custom_id": "ta_window_19",
+    "batch_id": "batch_req_690d58c6e5a881908e28d045e091828a",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": "3563.68",
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": "3530-3450",
+      "entry_type": null,
+      "stop_loss": "3376",
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "1"
+    },
+    "short_setup": {
+      "entry": "3650-3700",
+      "entry_type": null,
+      "stop_loss": "3835",
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3530",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3361",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "3673",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "3800",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_20",
+    "batch_id": "batch_req_690d58c75c9081909627bf31a879ff74",
+    "created_at": 1762482174
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "3860.00",
+      "24h_low": "3681.60",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": "145030.17"
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "2"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3756",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3600",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "3860",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4000",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật (tiếp tục lên/tiến sát 3,860 → test 4,000)",
+        "probability": "65%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (break xuống <3,756 → test 3,600 hoặc thấp hơn)",
+        "probability": "35%"
+      }
+    ],
+    "custom_id": "ta_window_21",
+    "batch_id": "batch_req_690d58c767888190987c10a69d46e960",
+    "created_at": 1762482177
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": "137074.22"
+    },
+    "long_setup": {
+      "entry": "3650-3680",
+      "entry_type": "conservative",
+      "stop_loss": "3507",
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": "3860-3878",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": "3770-3800",
+      "entry_type": null,
+      "stop_loss": "3923",
+      "stop_loss_alt": null,
+      "tp1": "3640-3658",
+      "tp2": "3500-3517",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3640",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3500",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "3770",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "3860",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_22",
+    "batch_id": "batch_req_690d58c7755c8190a06a3c908e8bbab5",
+    "created_at": 1762482172
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "1.5"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "1.5"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3735",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3668",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "3843",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "3860",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_23",
+    "batch_id": "batch_req_690d58c7676c81908b93ed5eb02a6e80",
+    "created_at": 1762482172
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "3874.54",
+      "24h_low": "3716.04",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "3832",
+      "tp2": "3893",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "3745",
+      "tp2": "3630",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3745",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3630",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "3832",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "3893",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật (thử phá R1 → test R2)",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (break S1 → test S2)",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_24",
+    "batch_id": "batch_req_690d58c775f081909132d722127f416c",
+    "created_at": 1762482188
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": "120%",
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "3528-3555",
+      "tp2": "3700-3760",
+      "atr_multiplier": "2"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "3431-3350",
+      "tp2": "3250-3100",
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3431",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3515-3535",
+        "zone": null
+      },
+      {
+        "level": "Support_1",
+        "price": "3431",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "3532-3554",
+        "zone": null
+      },
+      {
+        "level": "Resistance_1",
+        "price": "3528-3555",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "3700-3760",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "30%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "70%"
+      }
+    ],
+    "custom_id": "ta_window_25",
+    "batch_id": "batch_req_690d58c763a48190bc604e071f512900",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "3736.73",
+      "24h_low": "3601.53",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "3695",
+      "tp2": "3736",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "3500",
+      "tp2": "3383",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3500",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3383",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "3695",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "3736",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "35%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "65%"
+      }
+    ],
+    "custom_id": "ta_window_26",
+    "batch_id": "batch_req_690d58c77d3081909178505a04b42853",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": {
+        "start": "2025-08-02",
+        "end": "2025-08-08"
+      }
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {},
+    "short_setup": {},
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3890",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3705",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4012",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4200",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "65%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "35%"
+      }
+    ],
+    "custom_id": "ta_window_27",
+    "batch_id": "batch_req_690d58c7a3d0819098ed831b25c267da",
+    "created_at": 1762482237
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "4343.00",
+      "24h_low": "4185.10",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "2"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4185",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4051",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4343",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4350",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "65%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "35%"
+      }
+    ],
+    "custom_id": "ta_window_28",
+    "batch_id": "batch_req_690d58c7a244819080f8351002bd69bd",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "4788.00",
+      "24h_low": "4451.33",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "2"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4450",
+      "tp2": null,
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4625",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4450",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4738",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4788",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật (bounce & phục hồi lên 4,700–4,788)",
+        "probability": "35%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (tiếp tục test 4,450 → phá 4,400)",
+        "probability": "65%"
+      }
+    ],
+    "custom_id": "ta_window_29",
+    "batch_id": "batch_req_690d58c7962c8190a8eaad7694fb265b",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4576",
+      "tp2": "4740",
+      "atr_multiplier": "1.5"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4440",
+      "tp2": "4380",
+      "atr_multiplier": "1.5"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4440",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4380",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4576",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4740",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật (tiếp tục test k/từ 4,576 → 4,740)",
+        "probability": "55%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (đi xuống 4,440 → test 4,380 hoặc thấp hơn)",
+        "probability": "45%"
+      }
+    ],
+    "custom_id": "ta_window_30",
+    "batch_id": "batch_req_690d58c7de8c8190954d6f20af30ff9f",
+    "created_at": 1762482218
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "4308.49",
+      "24h_low": "4060.00",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": "210",
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4195",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4060",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4308",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4551",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_31",
+    "batch_id": "batch_req_690d58c7e5ec81908da05fb5c1a3c3fe",
+    "created_at": 1762482172
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4616",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4275",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4833",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4888",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "35%"
+      },
+      {
+        "scenario": "Trung lập / sideway",
+        "probability": "5%"
+      }
+    ],
+    "custom_id": "ta_window_32",
+    "batch_id": "batch_req_690d58c80fe08190994096088f863995",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "4645.54",
+      "24h_low": "4416.00",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {},
+    "short_setup": {},
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4416",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4280",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4575",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4710",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_33",
+    "batch_id": "batch_req_690d58c7f3a88190a95191b855d528f7",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": "-4.17",
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4265",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4380",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4454",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4600",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "30%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "70%"
+      }
+    ],
+    "custom_id": "ta_window_34",
+    "batch_id": "batch_req_690d58c805948190aeeabf888db0ae77",
+    "created_at": 1762482172
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "4491.84",
+      "24h_low": "4346.19",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4488",
+      "tp2": "4664",
+      "atr_multiplier": "2"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4346",
+      "tp2": "4257",
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4346",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4257",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4488",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4664",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "40%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "60%"
+      }
+    ],
+    "custom_id": "ta_window_35",
+    "batch_id": "batch_req_690d58c8573081909d9d26d9a53f7594",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": "4290-4340",
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": "4420-4480",
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4290",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4210",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4480",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4530",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "35%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "65%"
+      }
+    ],
+    "custom_id": "ta_window_36",
+    "batch_id": "batch_req_690d58c817448190bc0dfb132a21a59a",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "4315.35",
+      "24h_low": "4236.00",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": "4270-4290",
+      "entry_type": null,
+      "stop_loss": "40",
+      "stop_loss_alt": null,
+      "tp1": "4315",
+      "tp2": "4480",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4270",
+      "tp2": "4236",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_2",
+        "price": "4236",
+        "zone": null
+      },
+      {
+        "level": "Support_1",
+        "price": "4270",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4315",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "45%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "30%"
+      }
+    ],
+    "custom_id": "ta_window_37",
+    "batch_id": "batch_req_690d58c820c88190a007b17f5ca3acbb",
+    "created_at": 1762482185
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": "120%",
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4",
+        "zone": null
+      },
+      {
+        "level": "Support_1",
+        "price": "4",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4",
+        "zone": null
+      },
+      {
+        "level": "Resistance_1",
+        "price": "4",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật tiếp tục (tiến về 4.450 → 4.490)",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (retest sâu về 4.330 → 4.280 hoặc thấp hơn)",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_38",
+    "batch_id": "batch_req_690d58c850188190b1679bd0f2415296",
+    "created_at": 1762482206
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "4719.53",
+      "high": "4730.18",
+      "low": "4645.00",
+      "close": "4653.92",
+      "volume": "92866.38"
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "4769.36",
+      "24h_low": "4504.11",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": "4640-4680",
+      "entry_type": null,
+      "stop_loss": "4538",
+      "stop_loss_alt": null,
+      "tp1": "4710-4756",
+      "tp2": "4769-4792",
+      "atr_multiplier": "1.5"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": "4816",
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": "1.5"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4645",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4500",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4500-4542",
+        "zone": null
+      },
+      {
+        "level": "Support_1",
+        "price": "4645",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4710",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "55%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "45%"
+      }
+    ],
+    "custom_id": "ta_window_39",
+    "batch_id": "batch_req_690d58c839a48190a1d774733cc8b103",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "4538.25",
+      "24h_low": "4466.00",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": "66998.09"
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4525",
+      "tp2": "4756",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4424",
+      "tp2": "4300",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4424",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4300",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4525",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4756",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "30%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "70%"
+      }
+    ],
+    "custom_id": "ta_window_40",
+    "batch_id": "batch_req_690d58c891088190b1ea297d3cef90cc",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "4636.22",
+      "24h_low": "4445.64",
+      "24h_change_pct": "-2.71",
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": "4446-4500",
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4446",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4412",
+        "zone": null
+      },
+      {
+        "level": "Support_1",
+        "price": "4446",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4520",
+        "zone": null
+      },
+      {
+        "level": "Resistance_1",
+        "price": "4520",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4615",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "35%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "65%"
+      }
+    ],
+    "custom_id": "ta_window_41",
+    "batch_id": "batch_req_690d58c882b4819089e20fb3c76a531a",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "4498.16",
+      "24h_low": "4077.00",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4159",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4077",
+        "zone": null
+      },
+      {
+        "level": "Support_1",
+        "price": "4159",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4305",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4498",
+        "zone": null
+      },
+      {
+        "level": "Resistance_1",
+        "price": "4305",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật (hồi mạnh lên 4,305–4,330)",
+        "probability": "35%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (thủng 4,077 → test vùng thấp hơn)",
+        "probability": "65%"
+      }
+    ],
+    "custom_id": "ta_window_42",
+    "batch_id": "batch_req_690d58c8822881909fe485ff76daab7d",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "4194.42",
+      "24h_low": "3924.12",
+      "24h_change_pct": null,
+      "volume_vs_avg": "120%",
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4050",
+      "tp2": "4190-4215",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "3924",
+      "tp2": "3780-3700",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3924",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4000",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4050",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4190",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "38%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "62%"
+      }
+    ],
+    "custom_id": "ta_window_43",
+    "batch_id": "batch_req_690d58c894908190b79cccdd2862abbe",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "3992.39",
+      "high": "4029.48",
+      "low": "3966.00",
+      "close": "4021.69",
+      "volume": "47406.31"
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "4033.23",
+      "24h_low": "3966.00",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": "3970-4000",
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4033",
+      "tp2": "4215-4229",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": "4020-4050",
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "3966",
+      "tp2": "3815",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3966",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3815",
+        "zone": null
+      },
+      {
+        "level": "Support_1",
+        "price": "3966",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4033",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4215-4229",
+        "zone": null
+      },
+      {
+        "level": "Resistance_1",
+        "price": "4033",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_44",
+    "batch_id": "batch_req_690d58c896048190bc78c42b3efc6e23",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "4298.21",
+      "high": "4344.00",
+      "low": "4280.00",
+      "close": "4327.23",
+      "volume": "97899.32"
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": "4120-4160",
+      "entry_type": null,
+      "stop_loss": "3920",
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4100",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4000",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4344",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4400",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_45",
+    "batch_id": "batch_req_690d58c8ed94819080dc866300f50410",
+    "created_at": 1762482187
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": "-1.76",
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4510-4535",
+      "tp2": "4580-4610",
+      "atr_multiplier": "1.5"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4440-4465",
+      "tp2": "4370-4390",
+      "atr_multiplier": "1.5"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4440",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4370",
+        "zone": null
+      },
+      {
+        "level": "Support_1",
+        "price": "4440-4465",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4510",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4580",
+        "zone": null
+      },
+      {
+        "level": "Resistance_1",
+        "price": "4510-4535",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật (đáy ngắn hạn → retest R1)",
+        "probability": "60%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (bẻ gãy 4,440 → test 4,370 hoặc thấp hơn)",
+        "probability": "40%"
+      }
+    ],
+    "custom_id": "ta_window_46",
+    "batch_id": "batch_req_690d58c94c148190919cb5b736cdc739",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "4708.82",
+      "high": "4755.00",
+      "low": "4477.43",
+      "close": "4511.99",
+      "volume": "272531.48"
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": "4430-4480",
+      "entry_type": null,
+      "stop_loss": "180",
+      "stop_loss_alt": null,
+      "tp1": "4605",
+      "tp2": "4745-4755",
+      "atr_multiplier": "2"
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4350",
+      "tp2": "4200-4100",
+      "atr_multiplier": "2"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4445",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4350",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4605",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4745",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [],
+    "custom_id": "ta_window_47",
+    "batch_id": "batch_req_690d58c8ec90819083e65be500d29f32",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "4343.02",
+      "high": "4390.46",
+      "low": "4073.55",
+      "close": "4103.11",
+      "volume": "286824.61"
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": "79699.11"
+    },
+    "long_setup": {
+      "entry": "4100-4250",
+      "entry_type": null,
+      "stop_loss": "3833",
+      "stop_loss_alt": null,
+      "tp1": "4365",
+      "tp2": "4605",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": "4300-4450",
+      "entry_type": null,
+      "stop_loss": "4605",
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": "4000",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4073",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "4000",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4365",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4605",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật (hồi về 1st resistance rồi test)",
+        "probability": "35%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (tiếp tục phá xuống dưới 4,073 → test 4,000)",
+        "probability": "65%"
+      }
+    ],
+    "custom_id": "ta_window_48",
+    "batch_id": "batch_req_690d58c8fe1c8190b07854bc6b22bef7",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": "4135",
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": "2.49",
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": "4080-4120",
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": "4180-4220",
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": null,
+      "tp2": null,
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "4040",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3780",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4198",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4525",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "55%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "45%"
+      }
+    ],
+    "custom_id": "ta_window_49",
+    "batch_id": "batch_req_690d58c8f9b88190b76d1e401705d8e2",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4040",
+      "tp2": "4250",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "3892",
+      "tp2": "3725",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3892",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3725",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4040",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4250",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "35%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "65%"
+      }
+    ],
+    "custom_id": "ta_window_50",
+    "batch_id": "batch_req_690d58c90bdc8190b54bc9dde12a5b14",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": "3923.82",
+      "high": "4002.08",
+      "low": "3908.17",
+      "close": "3978.65",
+      "volume": "91707.69"
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "4002.08",
+      "24h_low": "3853.16",
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "4000",
+      "tp2": "4060-4085",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "3850",
+      "tp2": "3750",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3850",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3750",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "4000",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4060-4085",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật lên test 4,000–4,060 (breakout yếu có thể đến 4,100)",
+        "probability": "55%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ 3,850 → test 3,750",
+        "probability": "45%"
+      }
+    ],
+    "custom_id": "ta_window_51",
+    "batch_id": "batch_req_690d58c906c48190b9085d44afd93cd5",
+    "created_at": 1762482173
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": null,
+      "24h_low": null,
+      "24h_change_pct": null,
+      "volume_vs_avg": null,
+      "avg_volume_20": null
+    },
+    "long_setup": {},
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": "3912",
+      "stop_loss_alt": null,
+      "tp1": "3675",
+      "tp2": "3600-3550",
+      "atr_multiplier": "1.5"
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3780",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3675",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "3906",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4085",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật (bounce lên test 3,900–4,085)",
+        "probability": "58%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ (phá 3,780 → test 3,675 / thấp hơn)",
+        "probability": "42%"
+      }
+    ],
+    "custom_id": "ta_window_52",
+    "batch_id": "batch_req_690d58c944c88190ade3c10fe6e52354",
+    "created_at": 1762482174
+  },
+  {
+    "time_info": {
+      "candle_time": null,
+      "candle_time_vn": null,
+      "report_time_vn": null,
+      "data_range": null
+    },
+    "ohlcv": {
+      "open": null,
+      "high": null,
+      "low": null,
+      "close": null,
+      "volume": null
+    },
+    "market_context": {
+      "current_price": null,
+      "24h_high": "3969.22",
+      "24h_low": "3912.40",
+      "24h_change_pct": null,
+      "volume_vs_avg": "120%",
+      "avg_volume_20": null
+    },
+    "long_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "3960",
+      "tp2": "4050",
+      "atr_multiplier": null
+    },
+    "short_setup": {
+      "entry": null,
+      "entry_type": null,
+      "stop_loss": null,
+      "stop_loss_alt": null,
+      "tp1": "3920",
+      "tp2": "3855",
+      "atr_multiplier": null
+    },
+    "support_levels": [
+      {
+        "level": "Support_1",
+        "price": "3920",
+        "zone": null
+      },
+      {
+        "level": "Support_2",
+        "price": "3855",
+        "zone": null
+      }
+    ],
+    "resistance_levels": [
+      {
+        "level": "Resistance_1",
+        "price": "3960",
+        "zone": null
+      },
+      {
+        "level": "Resistance_2",
+        "price": "4050",
+        "zone": null
+      }
+    ],
+    "probability_scenarios": [
+      {
+        "scenario": "Tăng / hồi kỹ thuật",
+        "probability": "55%"
+      },
+      {
+        "scenario": "Giảm / thủng hỗ trợ",
+        "probability": "45%"
+      }
+    ],
+    "custom_id": "ta_window_53",
+    "batch_id": "batch_req_690d58c932b48190a6974219a075cc90",
+    "created_at": 1762482174
+  }
+]

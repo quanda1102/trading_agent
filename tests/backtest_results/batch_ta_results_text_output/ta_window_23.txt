@@ -1,0 +1,95 @@
+Dưới đây là phân tích kỹ thuật ngắn hạn (4H) cho ETH dựa trên dữ liệu 4H từ 2025-07-21 → 2025-07-27 (giờ VN, UTC+7). Tôi trình bày theo cấu trúc yêu cầu (1→6).
+
+Tóm tắt nhanh
+- Giá đóng cửa mới nhất (4H cuối): 3,818.53 USD (candle 2025-07-27 23:00, O=3,815.26).
+- Biên độ 24h (từ O của candle 2025-07-26 23:00 → hiện tại): tăng ≈ +2.12%.
+- 24h High–Low (6 candle gần nhất): 3,842.95 – 3,709.39 → biên độ khoảng 3.60%.
+- Avg Volume (20 kỳ trong dữ liệu): 119,176.33. Volume hiện tại (candle cuối): 90,376.25 → giảm ~24% so với trung bình.
+- ATR(14, 4H) (ước tính từ 14 candle gần nhất): ≈ 66 USD/candle → 1.5×ATR ≈ 99 USD; 2×ATR ≈ 132 USD.
+- Open Interest & Funding Rate: không có dữ liệu (không thể phân tích OI/Funding).
+
+1) Diễn biến giá (4H gần nhất)
+- Giá hiện tại / giá mở cửa / biến động 24h:
+  - Giá hiện tại (Close cuối): 3,818.53 USD
+  - Giá mở cửa 24h trước (2025-07-26 23:00 O): 3,739.37 USD → thay đổi ~+2.12%
+  - 24h high = 3,842.95; 24h low = 3,709.39 → biên độ 24h ≈ 3.60%
+
+- Hành động giá 4H gần nhất (quan sát nến):
+  - XU HƯỚNG: Short-term bias nghiêng tăng (higher highs & higher lows từ 26→27/7; cú bật mạnh ở candle 19:00 27/7 lên 3,842.95).
+  - Mẫu nến: candle cuối là nến tăng đóng gần đỉnh (bullish close gần high) — biểu hiện lực mua tại vùng hiện tại.
+  - EMA (quan sát cấu trúc giá): EMA ngắn hạn có độ dốc hướng lên (giá đang trên vùng trung bình các nến 4H gần nhất) → đường trung bình ngắn hạn nghiêng lên.
+  - RSI / MACD: không có dữ liệu số nhưng momentum nhìn chung tích cực (MACD histogram khả năng dương), chưa thấy dấu hiệu phân kỳ rõ rệt. Cảnh giác nếu RSI lên vùng quá mua (không thể xác nhận do thiếu dữ liệu).
+
+- Volume so với trung bình 20 kỳ:
+  - Volume hiện tại 90,376 ≈ 76% của avg (119,176) → Volume giảm ~24% so với trung bình 20 kỳ.
+  - Ý nghĩa: tăng giá nhưng volume thấp hơn trung bình → động lực không được xác nhận mạnh, rủi ro “mở rộng giá trên volume yếu” (fake breakout/trap).
+
+- OI:
+  - Không có dữ liệu Open Interest → không thể kết luận về dòng tiền phái sinh. Thiếu OI làm giảm độ tin cậy khi đánh giá xem breakout có được tiền mới hậu thuẫn hay là squeeze/trap.
+
+- Funding Rate:
+  - Không có dữ liệu → không thể đánh giá áp lực long/short từ funding.
+
+2) Hỗ trợ – Kháng cự ngắn hạn (vùng ±0.5%)
+- Hỗ trợ 1: 3,735 USD | phạm vi ±0.5% ≈ [3,716 – 3,754] (vùng chồng lấp nhiều lần chạm 26–27/7)
+- Hỗ trợ 2: 3,668 USD | phạm vi ±0.5% ≈ [3,650 – 3,686] (vùng đáy ngắn hạn và nhiều lần test 22–24/7)
+- Kháng cự 1: 3,843 USD | phạm vi ±0.5% ≈ [3,824 – 3,862] (đỉnh gần nhất 2025-07-27 19:00)
+- Kháng cự 2: 3,860 USD | phạm vi ±0.5% ≈ [3,840 – 3,880] (đỉnh tuần 2025-07-21 23:00)
+
+3) Xác suất diễn biến (24–72 giờ tới)
+
+| Kịch bản            | Xác suất (%) | Giải thích |
+| ------------------- | ------------ | ----------- |
+| Tăng / hồi kỹ thuật | 60%          | Cấu trúc giá 4H đang có higher highs & higher lows; giá trên EMA ngắn hạn; breakout gần đỉnh 3,843 có khả năng được test/tiếp tục. Tuy nhiên volume hiện tại thấp hơn trung bình → tăng tiếp có rủi ro thiếu lực. Thiếu dữ liệu OI/Funding làm giảm độ chắc chắn nhưng hành động giá nghiêng tích cực. |
+| Giảm / thủng hỗ trợ | 40%          | Volume thấp trong khi giá tăng → khả năng pullback hoặc trap tăng vẫn hiện hữu. Nếu giá rớt và thủng Support1 (≈3,735) với volume tăng, có xác suất bán tháo về 3,668 hoặc thấp hơn. Thiếu OI/Funding làm tăng rủi ro chuyển hướng đột ngột. |
+
+(Ghi chú: phân bố 60/40 vì cấu trúc ngắn hạn nghiêng tăng nhưng tín hiệu volume chưa xác nhận.)
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+(*) ATR(14, 4H) ≈ 66 USD → dùng làm thước đo SL (1.5–2×ATR).
+
+Long Setup:
+- Entry:
+  - Chiến lược A (pullback): mua vùng 3,740 – 3,760 (tiếp xúc Hỗ trợ1 & retest).
+  - Chiến lược B (breakout): mua khi đóng candle 4H chắc trên 3,862 (phá vùng 3,843–3,862 rồi retest thành support).
+- Stop Loss:
+  - Đặt SL = Hỗ trợ gần nhất – 1.5×ATR → 3,735 − 99 ≈ 3,636 (hoặc SL bảo thủ 2×ATR → ~3,603)
+  - (Có thể thu nhỏ SL nếu trade size nhỏ, nhưng tôn trọng multiple ATR)
+- Take Profit:
+  - TP1: Kháng cự gần nhất 3,843 (chốt 50% vị thế)
+  - TP2: Kháng cự mạnh 3,860+ (chốt 50% còn lại)
+- Khi TP1 đạt → dời SL về hòa vốn (break-even).
+
+Short Setup:
+- Entry:
+  - Entry short khi có rejection/đóng 4H thất bại vùng 3,824–3,862 (R1–R2) hoặc tại pullback xuống từ vùng này.
+- Stop Loss:
+  - SL = Kháng cự gần nhất + 1.5×ATR → 3,862 + 99 ≈ 3,961 (hoặc +2×ATR ≈ 3,994)
+- Take Profit:
+  - TP1: Hỗ trợ 1 (3,735) (chốt 50%)
+  - TP2: Hỗ trợ 2 (3,668) (chốt 50% còn lại)
+- Sau TP1 đạt → dời SL về hòa vốn.
+
+(Lưu ý: khoảng SL tính theo ATR là khá rộng do ATR ≈ 66 USD; điều chỉnh kích thước vị thế để rủi ro % tài khoản phù hợp.)
+
+5) Tổng hợp chiến lược (tóm tắt)
+
+| Khung | Hỗ trợ | Kháng cự | Xu hướng | Kịch bản chính | Kịch bản phụ |
+| ----- | ------ | -------- | -------- | -------------- | ------------ |
+| 4H    | 3,735; 3,668 | 3,843; 3,860 | Hơi bullish ngắn hạn | Tiếp tục thử nghiệm/đột phá 3,843 → có khả năng tiếp tục lên 3,860 nếu volume/đóng nến xác nhận | Pullback/test Hỗ trợ1 → nếu thủng với volume tăng sẽ về 3,668 |
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: theo dõi vùng 3,735–3,760 (hỗ trợ) để tìm entry long trên pullback; ưu tiên vào lệnh khi volume xác nhận (≥120% trung bình 20 kỳ) hoặc khi có breakout đóng 4H chắc trên 3,862.
+- Vì volume hiện thấp → cảnh giác trap tăng: tránh FOMO mua breakout nếu không có volume & đóng nến chắc.
+- Thiếu dữ liệu Funding/OI: luôn giữ risk management chặt (SL theo ATR, size nhỏ hơn khi market info thiếu).
+- Nếu vào lệnh long: bắt buộc dời SL về hòa vốn khi TP1 đạt; cắt lỗ nếu thủng support với volume tăng.
+- Quy tắc kỹ thuật: chỉ vào lệnh khi có một trong hai điều kiện:
+  - Volume candle xác nhận ≥120% trung bình 20 kỳ, hoặc
+  - Đóng candle 4H rõ ràng phía trên kháng cự (đóng >3,862) kèm follow-through.
+
+Kết luận ngắn gọn
+- Ngắn hạn (24–72h): thiên về bullish nhẹ (≈60%) nhưng thiếu xác nhận volume & thiếu dữ liệu OI/Funding → rủi ro đảo chiều vẫn còn cao. Hành động thận trọng: ưu tiên mua trên pullback có volume hoặc chờ breakout đóng 4H trên vùng 3,862 với volume hỗ trợ.
+
+Nếu bạn muốn, tôi có thể:
+- Vẽ biểu đồ với các mức hỗ trợ/kháng cự và các vùng entry/SL/TP cụ thể.
+- Tính ATR / RSI /EMA chính xác từ dữ liệu và trả về giá SL/TP cụ thể cho kích thước vị thế mong muốn.

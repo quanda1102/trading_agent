@@ -1,0 +1,76 @@
+Dưới đây là phân tích kỹ thuật ngắn hạn (4H) cho ETH trong 24–72 giờ tới dựa trên dữ liệu bạn cung cấp (thời gian VN, UTC+7). Lưu ý: dữ liệu Open Interest (OI) và Funding Rate không có — tôi sẽ ghi chú rủi ro do thiếu thông tin đó.
+
+1) Diễn biến giá (4H gần nhất)
+- Giá hiện tại (close candle 2025-06-03 23:00): 2,623.58 USD  
+- Giá mở (candle hiện tại): 2,601.78 USD  
+- Biên độ 24h: High 2,655.38 — Low 2,524.80 (24h range = 130.58 USD)  
+- Thay đổi 24h: +3.11% (so với close 24h trước 2,544.39 → 2,623.58)
+
+Hành động giá 4H gần nhất:
+- Candle 23:00 (mới nhất): O=2,601.78 H=2,655.38 L=2,598.02 C=2,623.58, Volume=102,211.94  
+  -> Candle xanh (bullish) với bấc trên khá dài (đã có test vùng ~2,655 nhưng đóng dưới đỉnh) → cho thấy lực mua xuất hiện nhưng vẫn có cung tại vùng cao hơn.  
+- Xu hướng ngắn hạn: Sau đáy vùng ~2,468–2,477 (01–02 Jun), ETH đã hồi phục liên tục, hình thành chuỗi đáy cao hơn và đỉnh cao hơn từ 02 Jun → dấu hiệu phục hồi/side-uptrend ngắn hạn.  
+- EMA (ước lượng): EMA ngắn hạn đang chuyển từ phẳng sang dốc lên (hỗ trợ cho hồi phục); không có số EMA chính xác nhưng slope ngắn hạn tích cực.  
+- RSI / MACD: không có giá trị trực tiếp; hành vi nến + volume cho thấy động lượng hồi vừa phải (không quá bùng nổ).
+
+Volume & so sánh với trung bình 20 kỳ:
+- Avg Volume (tập dữ liệu): 92,114  
+- Volume hiện tại (candle mới): 102,212 → tăng ~11% so với trung bình 20 kỳ. Diễn giải: volume tăng vừa phải, xác nhận đà mua chủ động nhưng chưa mạnh mẽ (không phải breakout với volume gấp đôi).
+
+Open Interest (OI):
+- Không có dữ liệu OI trong dataset. Vì vậy không thể xác định dòng tiền đòn bẩy (OI ↑/↓) để phân tích xem có dòng tiền mới tham gia hay lực ép long/short.
+
+Funding Rate:
+- Không có dữ liệu Funding Rate. Không thể đánh giá rủi ro short/long squeeze từ funding.
+
+2) Hỗ trợ – Kháng cự ngắn hạn (±0.5% vùng)
+- Hỗ trợ 1: 2,524.8 USD (vùng đáy 24h) | Kháng cự 1: 2,655.4 USD (đỉnh 24h)  
+- Hỗ trợ 2: 2,468.6 USD (vùng đáy tuần gần nhất) | Kháng cự 2: 2,788.0 USD (đỉnh tuần trong tập dữ liệu)  
+(Ghi chú: mỗi mức có thể coi kèm ±0.5% để xác định vùng tắt/bật)
+
+3) Xác suất diễn biến (24–72 giờ tới)
+
+| Kịch bản | Xác suất (%) | Giải thích |
+| --- | ---:| --- |
+| Tăng / hồi kỹ thuật tiếp tục (test/đột phá 2,655 → retest 2,700+) | 55% | Hồi phục từ đáy, chuỗi đáy/đỉnh cao hơn, volume tăng ~11% so với trung bình khi test vùng kháng cự 2,655. EMA ngắn hạn dốc lên. Thiếu OI/funding làm giảm độ tự tin nhưng cấu trúc giá ủng hộ tiếp tục hồi. |
+| Giảm / thủng hỗ trợ (pullback mạnh về 2,525 → 2,468) | 35% | Có nhiều nến rejection (bấc trên) tại vùng 2,650–2,660; nếu lực bán gia tăng hoặc volume giảm khi giá lên, dễ bị trap và kéo về vùng hỗ trợ. Thiếu OI khiến khả năng ép long/short khó đoán. |
+| Side-range (đi ngang giữa 2,525–2,655) | 10% | Nếu volume mỏng, giá có thể dao động trong vùng này chờ tin/ghi nhận OI. |
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+Lưu ý tính toán ATR(14) ước lượng từ dữ liệu 4H cuối: ATR14 ≈ 48 USD (xấp xỉ). Do đó 1.5x–2x ATR = 72 – 96 USD.
+
+Long Setup:
+- Entry: vùng pullback 2,600–2,630 USD (hoặc mua breakout trên 2,660 USD nếu đóng 4H rõ ràng trên kháng cự 2,655)  
+- Stop Loss: theo nguyên tắc 1.5x–2x ATR dưới support gần nhất. Ví dụ:
+  - Nếu entry ~2,620 và dùng stop = entry − 1.5×ATR → SL ≈ 2,620 − 72 = 2,548 USD (hoặc đặt SL dưới Support1: 2,524.8 − 72 ≈ 2,453 USD nếu muốn theo quy tắc “dưới support” như yêu cầu).  
+- Take Profit:
+  - TP1: 2,655 (kháng cự gần) — chốt 50% vị thế  
+  - TP2: 2,788 (kháng cự mạnh) — chốt 50% vị thế  
+- Khi TP1 đạt → dời SL về hòa vốn (break-even).
+
+Short Setup:
+- Entry: vùng bán (short) 2,640–2,670 USD nếu thấy rejection/volume sụt ở khu vực 2,655–2,660, hoặc short khi giá fail và đóng 4H dưới 2,600.  
+- Stop Loss: 1.5×–2× ATR trên kháng cự gần nhất. Ví dụ entry 2,660 → SL ≈ 2,660 + 72 = 2,732 (hoặc +96 = 2,756).  
+- Take Profit:
+  - TP1: 2,524.8 (support gần) — chốt 50%  
+  - TP2: 2,468.6 (support sâu) — chốt 50%  
+- Dời SL lên break-even sau khi TP1 đạt.
+
+5) Tổng hợp chiến lược
+
+| Khung | Hỗ trợ | Kháng cự | Xu hướng | Kịch bản chính | Kịch bản phụ |
+| ----- | ------ | -------- | -------- | -------------- | ------------ |
+| 4H (ngắn hạn) | 2,525 / 2,469 | 2,655 / 2,788 | Phục hồi ngắn hạn (side→up) | Tăng tiếp, test/đột phá 2,655 (55%) | Pullback về 2,525–2,468 nếu rejection (35%) |
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: tập trung theo dõi vùng 2,620–2,660. Vào long khi có pullback vào 2,600–2,630 với volume xác nhận (xác nhận: volume ≥120% trung bình 20 kỳ nếu muốn xác suất cao hơn) hoặc buy-on-breakout khi đóng 4H trên 2,655 với volume tăng rõ rệt.  
+- Nếu thấy volume tăng mạnh nhưng giá không vượt 2,655 → cảnh giác trap tăng (selling into strength). Nếu volume yếu trên breakout → dễ thất bại và kéo về.  
+- Vì thiếu dữ liệu OI và Funding Rate: đề phòng các move mạnh do thanh lý đòn bẩy không thể dự báo. Nếu có thể, kiểm tra OI/funding trên sàn bạn dùng trước khi vào lệnh.  
+- Quản trị rủi ro: đặt SL theo 1.5–2×ATR (72–96 USD), số lượng vào lệnh sao cho rủi ro tuyệt đối (SL * position size) phù hợp với mức chấp nhận rủi ro (ví dụ rủi ro 1–2% tài khoản).
+
+Kết luận ngắn gọn:
+- Xét cấu trúc giá 4H và volume, ETH đang trong pha hồi phục ngắn hạn với xác suất cao hơn cho kịch bản tăng/tiếp tục test kháng cự 2,655 trong 24–72 giờ. Tuy nhiên thiếu OI/funding làm giảm độ tin cậy — nếu thấy rejection mạnh tại vùng kháng cự hoặc volume không ủng hộ, chuẩn bị tinh thần pullback về 2,525–2,468.
+
+Nếu bạn muốn, tôi có thể:
+- Tính ATR / các EMA (7/21/50) chính xác từ toàn bộ dữ liệu 4H và hiển thị các mức SL/TP cụ thể cho vị thế theo % vốn.  
+- Hoặc kiểm tra lại khi bạn cung cấp dữ liệu OI và Funding Rate để hoàn thiện phân tích rủi ro đòn bẩy.

@@ -1,0 +1,72 @@
+Dưới đây là phân tích kỹ thuật ETH khung 4H (dữ liệu giờ Việt Nam – UTC+7) cho xu hướng ngắn hạn 24–72 giờ tới, dựa trên bộ dữ liệu 4H từ 2025-07-18 đến 2025-07-24 (candle cuối 2025-07-24 23:00 UTC+7).
+
+Tóm tắt nhanh
+- Giá hiện tại (close 4H cuối): 3,730.76 USD (candle 2025-07-24 23:00).
+- Giá 24h trước (close 2025-07-23 23:00): 3,644.22 USD → Thay đổi 24h ≈ +2.38%.
+- Biên độ 24h (cao/thấp trong 6 candle 4H gần nhất): H24 = 3,771.00, L24 = 3,502.85 → Biên độ ≈ 7.66%.
+- Volume trung bình (toàn bộ dữ liệu): 137,074.22; Volume candle hiện tại = 206,707.66 → ≈151% so với trung bình → xác nhận động lượng mua chủ động trong candle cuối.
+- Open Interest (OI) / Funding Rate: không có dữ liệu (không thể phân tích OI/Funding).
+
+1) Diễn biến giá (4H gần nhất)
+- Candle 4H gần nhất (2025-07-24 23:00 UTC+7): O=3,655.12, H=3,771.00, L=3,612.96, C=3,730.76 — cây tăng mạnh (body ~+75.6), thân lớn và bóng trên dài (chứng tỏ có chốt lời gần đỉnh intraday). Volume tăng ~151% so với trung bình 20 kỳ → xác nhận lực mua chủ động.
+- Hành động giá 4H vừa qua: chuỗi dao động rộng, tạo đỉnh cao mới intraday (3,771) sau giai đoạn tích luỹ/dao động 3,500–3,770. Có những pullback sâu (ví dụ low 3,502.85) nhưng giá đã bật lại → cấu trúc: bullish ngắn hạn với độ biến động lớn.
+- EMA (độ dốc): không có giá trị EMA chính xác do dữ liệu tính toán chỉ thủ công; tuy nhiên cấu trúc giá thể hiện EMA ngắn hạn đang nghiêng lên (giá tạo đỉnh cao hơn và đáy cao hơn trong vài ngày gần nhất).
+- RSI / MACD: không có chỉ số số liệu trực tiếp; nhưng động lượng gần đây (volume tăng + breakout lên high) cho tín hiệu xung lực tăng (MACD dự kiến trong vùng dương/đang mở rộng), RSI có khả năng ở vùng trung-bão hòa (không quá quá mua mạnh) do pullback gần đây — cần kiểm tra chỉ số thực tế trên chart nếu cần giá trị chính xác.
+- So sánh Volume với trung bình 20 kỳ: Volume hiện tại 206.7k vs trung bình ~137.1k → tăng ~151% → xác nhận đà mua chủ động, breakout có chất lượng.
+- OI: không có dữ liệu → không thể đánh giá dòng tiền phái sinh (không biết OI ↑/↓).
+- Funding rate: không có dữ liệu → không cảnh báo squeeze cụ thể.
+
+2) Hỗ trợ – Kháng cự ngắn hạn (vùng ±0.5%)
+- Hỗ trợ 1: 3,640 – 3,658 USD (vùng tích luỹ / close & pivot gần 2025-07-24 11:00–23:00) | Kháng cự 1: 3,770 – 3,789 USD (đỉnh intraday 3,771 + vùng cung gần 3,790)
+- Hỗ trợ 2: 3,500 – 3,517 USD (cú pullback sâu 2025-07-24 15:00 low 3,502.85) | Kháng cự 2: 3,860 – 3,878 USD (đỉnh mạnh trong dataset: 3,860.00)
+Ghi chú: các vùng nêu ±0.5% để dễ áp dụng stop/entry.
+
+3) Xác suất diễn biến (24–72 giờ tới)
+
+| Kịch bản            | Xác suất (%) | Giải thích                                                                      |
+| ------------------- | ------------ | ------------------------------------------------------------------------------- |
+| Tăng / hồi kỹ thuật | 60%          | Candle breakout mạnh kèm volume tăng 151% vs TB → xác nhận lực mua. Cấu trúc giá ngắn hạn là higher highs / higher lows. Thiếu dữ liệu OI/Funding là hạn chế nhưng động lượng giá + volume ủng hộ kịch bản tăng tiếp. |
+| Giảm / thủng hỗ trợ | 40%          | Bóng trên dài ở candle cuối cho thấy chốt lời tại vùng 3,770; biên độ dao động lớn và các pullback sâu trước đó cho thấy rủi ro biến động. Nếu không giữ vùng 3,640–3,658 hoặc volume đảo chiều tăng khi retest → khả năng thủng 3,500 thực tế. |
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+Chuẩn bị tham chiếu ATR(14, 4H) ước tính: ~95 USD (tính trung bình phạm vi H–L 14 candle gần nhất).
+Vậy 1.5x ATR ≈ 143 USD; 2x ATR ≈ 190 USD.
+
+Long Setup:
+- Entry (conservative): vùng giá 3,650 – 3,680 USD (retest support 1 hoặc pullback nhẹ).
+- Entry (aggressive): giữ giá hiện tại / bắt break & retest trên 3,770 với confirmation.
+- Stop Loss: 1.5x ATR dưới support gần nhất → nếu support 3,650 → SL ≈ 3,650 − 143 ≈ 3,507 USD. (Nếu muốn an toàn hơn dùng 2xATR → SL ≈ 3,650 − 190 ≈ 3,460).
+- Take Profit:
+  - TP1: 3,770 – (chốt 50%)
+  - TP2: 3,860 – 3,878 (chốt 50%)
+- Khi TP1 đạt → dời SL về hòa vốn (break-even).
+
+Short Setup:
+- Entry: vùng kháng cự 3,770 – 3,800 USD nếu có rejection / pinbar / volume bán tăng trên vùng này.
+- Stop Loss: 1.5x ATR trên kháng cự → nếu entry 3,780 → SL ≈ 3,780 + 143 ≈ 3,923 USD (rất rủi ro, cần position size nhỏ).
+- Take Profit:
+  - TP1: 3,640 – 3,658 (chốt 50%)
+  - TP2: 3,500 – 3,517 (chốt 50%)
+- Dời SL theo tỷ lệ khi TP1 đạt (kéo về BE hoặc trailing).
+
+Position sizing / quản trị rủi ro:
+- Do ATR và biến động lớn, mỗi trade nên giới hạn risk (ví dụ ≤1–2% vốn trên 1 vị thế).
+- Nếu dùng stop rộng (≥1.5xATR) → giảm kích thước lệnh tương ứng.
+
+5) Tổng hợp chiến lược
+
+| Khung | Hỗ trợ | Kháng cự | Xu hướng | Kịch bản chính | Kịch bản phụ |
+| ----- | ------ | -------- | -------- | -------------- | ------------ |
+| 4H    | 3,640–3,658; 3,500–3,517 | 3,770–3,789; 3,860–3,878 | Ngắn hạn: bullish-biến động cao | Breakout tiếp lên 3,860 (60%) | Từ chối tại 3,770 → pullback/thoái lui về 3,500 (40%) |
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: tập trung theo dõi vùng 3,640–3,680 (retest support) và vùng 3,770–3,790 (kháng cự/breakout). Vào long khi retest support có volume xác nhận (volume ≥ 120% trung bình 20 kỳ → threshold ≈ 164k). Vào short chỉ khi có rejection rõ ràng kèm volume bán tăng.
+- Nếu Funding Rate / OI cao (không có dữ liệu): cảnh giác trap tăng; vì không có OI/Funding không thể loại trừ tín hiệu giả. Do đó, ưu tiên tín hiệu price+volume.
+- Chỉ vào lệnh khi có xác nhận: break & retest với volume ≥120% TB20 hoặc candle reversal kèm volume tăng.
+- Khuyến nghị: do biến động lớn (ATR~95 USD), giữ risk nhỏ, tránh stop quá hẹp; ưu tiên trade theo xu hướng chính (long bias hiện tại) trừ khi có dấu hiệu đảo chiều rõ ràng.
+
+Lưu ý cuối
+- Phân tích dựa trên dữ liệu 4H cung cấp; thiếu OI và Funding là giới hạn quan trọng — nếu bạn có dữ liệu OI/Funding/RSI/MACD chính thức tôi sẽ cập nhật phân tích và điều chỉnh xác suất/entry chính xác hơn.
+- Nếu muốn, tôi có thể tính EMA/RSI/MACD chính xác (và ATR chính xác) từ dữ liệu nến đầy đủ bạn cung cấp để đưa ra mức cắt lỗ & take-profit cụ thể hơn theo đô la và % vốn.
+
+Bạn muốn tôi cập nhật thêm bảng tính ATR/EMA/RSI/MACD chi tiết từ dataset này không?

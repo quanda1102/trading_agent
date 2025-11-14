@@ -1,0 +1,86 @@
+Dưới đây là phân tích kỹ thuật 4H (ngắn hạn 24–72 giờ) cho ETH dựa trên dữ liệu bạn cung cấp. Tất cả mốc thời gian đều tính theo giờ Việt Nam (UTC+7). Dữ liệu cuối cùng: candle 4H đến 2025-09-01 23:00 (UTC+7).
+
+1) Diễn biến giá (4H gần nhất)
+- Giá hiện tại (close 4H cuối): 4,362.01 USD
+- Giá mở cửa của cây 4H hiện tại: 4,392.83 USD
+- Biên độ 24h: High = 4,491.84 USD, Low = 4,346.19 USD
+- Thay đổi 24h (so với close 24h trước, close 2025-08-31 23:00 = 4,485.27): ≈ -2.7% (giảm ~123 USD)
+
+Hành động giá 4H gần nhất
+- Cây 4H cuối là cây giảm (close < open) thể hiện áp lực bán ngắn hạn.
+- Xu hướng 4H trong ngắn hạn: sideway → hơi nghiêng xuống (choppy). Trong 7–10 cây gần nhất thấy đáy quanh 4,340–4,360, đỉnh quanh 4,488–4,491 → cấu trúc giá dao động trong vùng, có các pha hồi nhưng không phá vững kháng cự để quay lên.
+- EMA (độ dốc): các EMA ngắn hạn (20EMA/50EMA 4H) có khả năng đang đi ngang hoặc hơi dốc xuống (do các đỉnh thấp hơn và loạt pullback), tức động lượng tăng không mạnh.
+- RSI / MACD: không có giá trị trực tiếp, nhưng hành vi giá + volume cho thấy momentum không mạnh; MACD có thể gần đường tín hiệu (không có xung tăng mạnh).
+
+Volume & so sánh
+- Volume hiện tại (4H cuối): 65,084.46
+- Trung bình (20 kỳ / dữ liệu cho) ~95,854.44
+- So sánh: Volume giảm ~32% so với trung bình → động lượng giảm, phiên giảm này thiếu xác nhận khối lượng (thường cho thấy khả năng tiếp tục giảm có thể gặp giới hạn, hoặc là phân phối kéo dài không bùng nổ).
+
+Open Interest (OI)
+- Không có dữ liệu OI → không thể đánh giá dòng tiền phái sinh/độ tham gia margin. Thiếu OI làm giảm độ chắc chắn trong luận điểm “dòng tiền đẩy vào/ra”.
+
+Funding rate
+- Xu hướng funding tăng chung (+116% so với điểm đầu) nhưng biên độ nhỏ: trung bình ~0.000025 (0.0025%), các lần cao nhất ~0.000060 (0.0060%). Giá trị hiện tại gần 0 (0.000001).
+- Ý nghĩa: Funding dương nhỏ → hơi nghiêng long trả phí (bias mua nhẹ) tại một vài thời điểm, nhưng tuyệt đối còn rất thấp → chưa cho tín hiệu quá tải long/short. Lưu ý: funding tăng nhưng gần bằng 0 nên rủi ro short/long squeeze ở mức thấp-moderate.
+
+2) Hỗ trợ – Kháng cự ngắn hạn (4H)
+- Hỗ trợ 1: 4,346 — vùng 4,346 ±0.5% → (≈ 4,324 – 4,368)
+- Hỗ trợ 2: 4,257 — vùng 4,257 ±0.5% → (≈ 4,235 – 4,279)
+
+- Kháng cự 1: 4,488 — vùng 4,488 ±0.5% → (≈ 4,466 – 4,511)
+- Kháng cự 2: 4,664 (đỉnh swing 4,663.9) — vùng 4,664 ±0.5% → (≈ 4,641 – 4,688)
+
+Ghi chú: Hỗ trợ 1 / Kháng cự 1 là vùng trung tính cần quan sát volume xác nhận khi retest.
+
+3) Xác suất diễn biến (24–72 giờ tới)
+
+| Kịch bản            | Xác suất (%) | Giải thích                                                                      |
+| ------------------- | ------------ | ------------------------------------------------------------------------------- |
+| Tăng / hồi kỹ thuật | 40%          | Giá nằm trong vùng sideway, funding hơi dương (một số long), nhưng volume thấp → có khả năng test lại 4,488 nếu xuất hiện volume cao/đột biến tin tức. EMA ngắn hạn chưa tạo dốc tăng rõ. |
+| Giảm / thủng hỗ trợ | 60%          | Áp lực bán liên tục trong các cây gần nhất, volume giảm (không xác nhận tăng) và hành xử giá choppy với các lower-high; thiếu OI và momentum tăng → xác suất phá hỗ trợ 4,346 cao hơn, có khả năng test vùng 4,257 nếu phá. |
+
+(Thông tin: tỷ lệ là ước lượng dựa trên hành vi giá 4H, volume so với trung bình, trend funding và thiếu dữ liệu OI.)
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+- ATR(14) trên 4H (ước lượng từ dữ liệu mẫu gần nhất): ≈ 67 USD
+  → 1.5×ATR ≈ 100 USD, 2×ATR ≈ 134 USD.
+
+Long Setup:
+- Entry: vùng 4,340 – 4,380 (ưu tiên mua khi giá chạm vùng hỗ trợ 4,346 và có volume xác nhận tăng)
+- Stop Loss: đặt dưới Hỗ trợ 1 bằng 1.5–2×ATR → SL khoảng 4,346 − 100 → ~4,246 (1.5×ATR) đến 4,346 − 134 → ~4,212 (2×ATR). (Điều chỉnh theo entry thực tế.)
+- Take Profit:
+  - TP1: 4,488 (kháng cự gần nhất) — chốt 50%
+  - TP2: 4,664 (kháng cự mạnh) — chốt 50%
+- Quản lý: khi TP1 đạt → dời SL về hòa vốn (break-even) + nhỏ một phần chốt.
+
+Short Setup:
+- Entry: vùng kháng cự 4,466 – 4,510 (từ 4,488 zone, hoặc nếu hồi lên 4,640–4,680 có thể short mạnh hơn)
+- Stop Loss: 1.5–2×ATR trên kháng cự gần nhất → ví dụ short tại 4,488 → SL ~4,488 + 100 → 4,588 (1.5×ATR) hoặc +134 → 4,622 (2×ATR).
+- Take Profit:
+  - TP1: 4,346 (hỗ trợ gần) — chốt 50%
+  - TP2: 4,257 (hỗ trợ mạnh) — chốt 50%
+- Quản lý: nếu TP1 đạt → dời SL lên hòa vốn.
+
+Quản trị rủi ro chung: không rủi ro >1–2% vốn trên mỗi lệnh; luôn scale vị thế theo khoảng cách SL thực tế.
+
+5) Tổng hợp chiến lược
+
+| Khung | Hỗ trợ       | Kháng cự     | Xu hướng       | Kịch bản chính         | Kịch bản phụ          |
+| ----- | ------------ | ------------ | -------------- | ---------------------- | --------------------- |
+| 4H    | 4,346 / 4,257| 4,488 / 4,664| Sideway → nhẹ giảm | Thủng 4,346 → test 4,257 | Hồi kĩ thuật lên 4,488 → test 4,664 |
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: tập trung theo dõi vùng 4,346 – 4,488. Chỉ vào lệnh khi có xác nhận volume ≥120% trung bình 20 kỳ hoặc nến phá vỡ kèm volume/đóng cửa vượt vùng.
+- Vì Funding Rate đang tăng nhưng ở mức thấp → không tạo thành bias quá lớn; cảnh giác trap tăng (fake breakout) nếu volume không theo.
+- Do thiếu OI data → tránh đặt quá nhiều niềm tin vào luận điểm “dòng tiền mới đẩy vào”; ưu tiên tín hiệu price+volume.
+- Nếu muốn trade: ưu tiên setup theo breakout có volume hoặc retest hỗ trợ với tín hiệu đảo chiều (nến engulfing tăng kèm volume).
+- Nếu bạn đang giữ vị thế long: cân nhắc chốt 30–50% ở vùng 4,488 nếu có tăng nhẹ, dời SL về hòa vốn.
+- Chú ý tin tức & sự kiện on-chain / macro trong 24–72h có thể làm thay đổi nhanh cấu trúc (cần cập nhật).
+
+Kết luận ngắn gọn:
+- Thị trường 4H hiện ở trạng thái dao động/choppy, nghiêng nhẹ có xác suất giảm trong 24–72h (~60%) do volume thấp và hành vi giá không mạnh. Để đảo cơ hội, cần volume khối lượng lớn khi vượt 4,488. Thiếu OI làm giảm khả năng dự báo dựa trên thị trường phái sinh — ưu tiên price + volume để vào lệnh.
+
+Nếu bạn muốn, tôi có thể:
+- Tính ATR/EMA/RSI/MACD chính xác trên dữ liệu 4H nếu bạn cho phép tôi thực hiện tính toán trên toàn bộ chuỗi nến.
+- Cho mẫu sizing vị thế cụ thể theo vốn (%) và điểm SL/TP chi tiết cho một số mức entry bạn muốn.

@@ -1,0 +1,26 @@
+[
+  {
+    "long_setup": {
+      "entry": "4480–4520",
+      "stop_loss": "4477",
+      "tp1": "4560",
+      "tp2": "4720–4755"
+    },
+    "short_setup": {
+      "entry": "4560–4720",
+      "stop_loss": "4755",
+      "tp1": "4477",
+      "tp2": "4370"
+    },
+    "support_levels": [
+      "4477",
+      "4370–4380"
+    ],
+    "resistance_levels": [
+      "4560–4605",
+      "4720–4755"
+    ],
+    "custom_id": "ta_window_0",
+    "batch_id": "batch_req_690d5275e08081909f3e3c4aaaef55e5"
+  }
+]

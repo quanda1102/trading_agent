@@ -1,0 +1,74 @@
+Dưới đây là phân tích kỹ thuật ngắn hạn (24–72 giờ) cho ETH trên khung 4H, dựa trên dữ liệu nến 4H từ 2025-08-14 tới 2025-08-20 và các chỉ báo thị trường kèm theo. Tất cả thời gian dùng theo giờ Việt Nam (UTC+7).
+
+Tóm tắt nhanh
+- Giá hiện tại (Close cuối cùng, 2025-08-20 23:00): 4,255.90 USD
+- Giá mở cửa 24h trước (Close 2025-08-19 23:00): 4,192.14 USD
+- Biên độ 24h: High = 4,308.49, Low = 4,060.00 → biên độ high-low = 248.49 USD (≈5.93% so với open 24h). Thay đổi giá 24h: +1.52% (4,255.90 so với 4,192.14).
+
+1) Diễn biến giá (4H gần nhất)
+- Nến 4H gần nhất (2025-08-20 23:00): O=4,195.29 H=4,308.49 L=4,106.37 C=4,255.90, Vol=215,624.98  
+  - Hành động giá: cây nến tăng mạnh với biên độ lớn (body dương) và bóng dưới/ trên dài → thể hiện lực mua mạnh kèm biến động, đóng cửa gần giữa/ phía trên thân → hồi phục kỹ thuật sau đáy ~4,060.
+  - Xu hướng 4H ngắn hạn: đang hồi phục — chuỗi close gần đây cho thấy đáy kép quanh 4,060–4,075 và sau đó tăng dần lên 4,255. Độ dốc EMA ngắn hạn (EMA 12/26 4H) dự kiến đang chuyển sang tích cực (EMA ngắn cắt trên dài), tức là momentum tăng ngắn hạn.
+  - RSI/MACD (chung): momentum có dấu hiệu hồi phục (RSI tăng từ vùng thấp; MACD có khả năng đảo chiều/histogram thu hẹp âm → dương). Lưu ý: không có số liệu RSI/MACD chính xác trong dữ liệu, đây là suy luận từ hành động giá và volume.
+
+- Volume: Volume hiện tại 215,625 so với Avg Volume 20 kỳ = 129,080.63 → tăng ≈167% so với trung bình 20 kỳ → xác nhận đà mua chủ động trong cây nến tăng lớn vừa qua.
+
+- OI: Không có dữ liệu Open Interest → không thể đánh giá tốt dòng tiền derivatives (không xác định có dòng tiền mới tham gia hay squeeze). Cần theo dõi OI khi có dữ liệu.
+
+- Funding Rate: dữ liệu có sẵn nhỏ, dương và ổn định quanh +0.009% đến +0.01% (avg ≈+0.0083%). Xu hướng funding: tương đối ổn định, có một điểm bất thường xuống 0.000003 (0.0003%) tại 2025-08-20 15:00 (có thể là lỗi/report anomaly). Kết luận: funding dương nhưng rất nhỏ → bias nhẹ về long (long trả phí), không phải mức quá cao để báo hiệu short squeeze ngắn hạn.
+
+2) Hỗ trợ – Kháng cự ngắn hạn (vùng ±0.5%)
+- Hỗ trợ 1: 4,195 (vùng 4,174 – 4,216) | Kháng cự 1: 4,308 (vùng 4,287 – 4,329)  
+  Ghi chú: Hỗ trợ 1 lấy từ vùng close 2025-08-20 19:00–23:00; Kháng cự 1 lấy từ high 4,308.49.
+- Hỗ trợ 2: 4,060 (vùng 4,040 – 4,080) | Kháng cự 2: 4,551 (vùng 4,528 – 4,574)  
+  Ghi chú: Hỗ trợ 2 = đáy swing gần đây (4,060). Kháng cự 2 = swing high vùng 4,551–4,562 (các đỉnh 17–18 Aug).
+
+3) Xác suất diễn biến (24–72 giờ tới)
+
+| Kịch bản            | Xác suất (%) | Giải thích |
+| ------------------- | ------------ | ----------------------------------------------------------------------------- |
+| Tăng / hồi kỹ thuật | 60%          | Volume tăng mạnh (≈167% so với trung bình 20 kỳ) + nến tăng lớn cho thấy lực mua; funding dương nhẹ hỗ trợ bias long; hành động giá hình thành đáy gần 4,060 và bật lên qua vùng 4,190–4,255. |
+| Giảm / thủng hỗ trợ | 40%          | Thiếu dữ liệu OI nên không rõ dòng tiền mới; giá còn dưới vùng kháng cự mạnh 4,308–4,550 và xu hướng tuần vẫn giảm (tuần trước giảm ~10%), rủi ro giả tăng/đẩy stop tồn tại; nếu volume giảm và giá không giữ 4,195 sẽ có khả năng test lại 4,060. |
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+Lưu ý trước khi vào lệnh: xác định ATR(14) trên khung 4H thực tế trước khi đặt SL. Dưới đây là quy tắc + ví dụ minh họa (ví dụ ATR 14 giả định ≈ 140 USD ≈ 3.3% — hãy tính ATR chính xác trên nền tảng của bạn trước khi giao dịch).
+
+Long Setup:
+- Entry: vùng giá 4,190 – 4,230 (pullback vào hỗ trợ 1 hoặc tiến lên breakout qua 4,308 nếu muốn chase)  
+- Stop Loss: đặt dưới hỗ trợ gần nhất bằng 1.5x–2x ATR(14). Ví dụ ATR≈140 → SL = 1.5×140 = 210 USD dưới hỗ trợ → nếu entry tại 4,210 và hỗ trợ 4,195, SL ≈ 4,195 − 210 ≈ 3,985 (tùy chỉnh theo ATR thực tế).  
+- Take Profit:
+  - TP1: kháng cự gần nhất = ~4,308 (chốt 50%)  
+  - TP2: kháng cự mạnh = ~4,551 (chốt 50%)  
+- Khi TP1 đạt → dời SL về hòa vốn (break-even) hoặc dời SL lên dưới đỉnh pullback tùy quản trị rủi ro.
+
+Short Setup:
+- Entry: vùng giá 4,280 – 4,330 (khi giá tiếp cận/kháng cự 1 và có tín hiệu từ chối/mẫu nến đảo chiều) hoặc 4,500–4,560 nếu hồi lên kháng cự 2.  
+- Stop Loss: 1.5x–2x ATR(14) trên kháng cự gần nhất. Ví dụ ATR≈140 → SL ≈ kháng cự + 210–280 USD.  
+- Take Profit:
+  - TP1: hỗ trợ gần = ~4,195 (chốt 50%)  
+  - TP2: hỗ trợ mạnh = ~4,060 (chốt 50%)  
+- Khi TP1 đạt → dời SL về hòa vốn.
+
+5) Tổng hợp chiến lược
+
+| Khung | Hỗ trợ | Kháng cự | Xu hướng | Kịch bản chính | Kịch bản phụ |
+| ----- | ------ | -------- | -------- | -------------- | ------------ |
+| 4H (24–72h) | 4,195 / 4,060 | 4,308 / 4,551 | Hồi phục ngắn hạn trong vùng giảm trung hạn | Hồi kỹ thuật tiếp tục -> test 4,308 → 60% | Bị kháng cự mạnh/volume giảm -> thủng về 4,060 -> 40% |
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: tập trung theo dõi vùng 4,174–4,216 (Hỗ trợ 1). Vào long khi có pullback vào vùng này kèm volume xác nhận (volume ≥120% trung bình 20 kỳ) và nến hồi đóng cửa trên vùng. Nếu muốn vào theo breakout, chờ đóng nến 4H trên 4,308 với volume tăng.  
+- Theo dõi Funding Rate: hiện dương nhưng rất nhỏ → bias nhẹ long. Không thấy dấu hiệu funding quá cao (không báo hiệu short squeeze mạnh). Lưu ý điểm bất thường funding 2025-08-20 15:00 có giá trị rất thấp → bỏ qua/kiểm tra nguồn.  
+- Vì không có OI, cần thận trọng: không có xác nhận rằng dòng tiền futures mới tham gia. Nếu có được OI tăng đồng thời với giá tăng → xác nhận đà bền vững; nếu OI giảm khi giá tăng → khả năng pump giả/short-covering.  
+- Chỉ vào lệnh khi có xác nhận volume ≥120% so với trung bình 20 kỳ hoặc có đóng nến 4H rõ ràng vượt/giữ vùng hỗ trợ/kháng cự đã nêu.
+
+Rủi ro và điểm cần theo dõi
+- Tuần trước ETH có giảm mạnh (~-10% trong khoảng dữ liệu) → hành động giá vẫn trong xu hướng điều chỉnh trung hạn. Các trade ngắn hạn nên có SL chặt và quản lý kích thước vị thế.  
+- Thiếu dữ liệu OI là điểm yếu cho phân tích; nếu bạn có access OI trong realtime, dùng OI + funding để xác nhận dòng tiền futures.  
+- Kiểm tra ATR(14) thực tế trên nền tảng của bạn để tính SL theo yêu cầu 1.5–2×ATR.
+
+Kết luận ngắn gọn
+- Hiện tại ETH đang trong pha hồi kỹ thuật ngắn hạn (24–72h) với xác suất cao hơn về tiếp tục tăng nhẹ/retest kháng cự ~4,308 do volume tăng mạnh và funding dương nhẹ — nhưng vẫn cần thận trọng vì thiếu OI và áp lực kháng cự vùng 4,300–4,550. Vào lệnh cần có xác nhận volume và dùng SL theo ATR.
+
+Nếu bạn muốn, tôi có thể:
+- Tính chính xác ATR(14) trên khung 4H từ dữ liệu nến đã có và đưa ra mức SL/TP cụ thể bằng USD.  
+- Hoặc vẽ các vùng hỗ trợ/kháng cự và điểm entry/exit trên biểu đồ 4H (nếu bạn gửi nền tảng/ảnh biểu đồ).

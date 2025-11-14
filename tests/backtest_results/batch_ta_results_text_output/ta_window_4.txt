@@ -1,0 +1,83 @@
+Dưới đây là bản phân tích kỹ thuật ngắn hạn (24–72 giờ) cho ETH trên khung 4H, dùng dữ liệu bạn cung cấp (dải nến 2025-05-25 → 2025-05-31). Mốc thời gian báo cáo: dữ liệu kết thúc 2025-05-31 23:00 (UTC) = 2025-06-01 06:00 (VN, UTC+7).
+
+Tóm tắt nhanh:
+- Giá hiện tại (close candle cuối): 2,536.30 USD (candle 2025-05-31 23:00 UTC)
+- Giá mở cửa cách 24h (close 2025-05-30 23:00): 2,598.21 USD
+- Thay đổi 24h: -61.91 USD ≈ -2.38%
+- Biên độ 24h (cao/thấp trong 24h): High = 2,604.28 USD (03:00), Low = 2,475.33 USD (11:00)
+- Avg Volume (tập dữ liệu): ~96,713; Volume candle cuối: 66,920 (~69% của trung bình → giảm)
+
+1) Diễn biến giá (4H gần nhất)
+- Giá hiện tại / open / biên độ 24h: như trên.
+- Hành động giá 4H gần nhất (candle 2025-05-31 23:00):
+  - O=2,519.61, H=2,550.14, L=2,515.95, C=2,536.30, V=66,920.
+  - Mẫu nến: thân xanh nhẹ (close > open) với bấc trên dài hơn, cho thấy một nhịp hồi nhỏ nhưng gặp kháng cự trên ~2,550.
+  - Xu hướng 4H ngắn hạn: đang trong pha điều chỉnh/sideways sau đợt giảm từ đỉnh 2,788 (29-05). Chuỗi nến gần đây tạo đáy thấp hơn (lower lows) và đỉnh thấp hơn — cấu trúc nghiêng nhẹ tiêu cực.
+  - EMA (độ dốc): không có giá trị EMA tính sẵn, nhưng quan sát đóng cửa 6–12 cây gần nhất cho thấy momentum giảm; EMA ngắn hạn khả năng vẫn đang hướng xuống hoặc nằm ngang.
+  - RSI / MACD: không có giá trị số, nhưng hành động giá + volume giảm gợi ý RSI quanh vùng trung lập→hơi thiên về bán (40–50), MACD có thể âm hoặc histogram thu hẹp (giảm áp lực bán nhưng chưa rõ ràng đảo chiều).
+- Volume so với trung bình 20 kỳ: Volume candle cuối ~66,920 ≈ 69% của trung bình 96,713 → Volume giảm ~31% so với trung bình, tín hiệu hồi này thiếu lực khớp lệnh xác nhận.
+- Open Interest (OI): không có dữ liệu.
+  - Hệ quả: không thể đánh giá dòng tiền phái sinh; cần thận trọng vì không biết liệu OI tăng đi kèm giá tăng (confirm) hay OI tăng khi giá giảm (ép long).
+- Funding Rate: không có dữ liệu.
+  - Lưu ý: không có thông số funding → không thể cảnh báo kim loại long/short từ funding; ưu tiên dùng price + volume + cấu trúc.
+
+2) Hỗ trợ – Kháng cự ngắn hạn (vùng ±0.5%)
+- Hỗ trợ 1: 2,516 (vùng 2,503 – 2,529) | (nguồn: low recent 2,515.95)
+- Hỗ trợ 2: 2,475 (vùng 2,462 – 2,487) | (nguồn: low 2025-05-31 11:00 = 2,475.33)
+- Kháng cự 1: 2,550 (vùng 2,537 – 2,562) | (nguồn: high candle cuối 2,550.14)
+- Kháng cự 2: 2,626 (vùng 2,613 – 2,638) | (nguồn: vùng hội tụ nhiều high/zone 2,620–2,630; vùng tiếp theo mạnh hơn 2,687–2,762)
+
+3) Xác suất diễn biến (24–72 giờ tới)
+
+| Kịch bản            | Xác suất (%) | Giải thích                                                                      |
+| ------------------- | ------------ | ------------------------------------------------------------------------------- |
+| Tăng / hồi kỹ thuật | 40%          | Hồi hiện đang thiếu volume (V < trung bình) và chưa phá các kháng cự 2,550–2,626; cấu trúc short-term vẫn thiên giảm → nếu có volume đột biến và phá 2,550 với OI tăng thì xác suất hồi mạnh tăng. |
+| Giảm / thủng hỗ trợ | 60%          | Chuỗi lower highs / lower lows, momentum yếu, volume hồi thấp → dễ tiếp tục dò đáy về vùng 2,475 hoặc phá xuống; không có dữ liệu OI/funding để phủ nhận kịch bản giảm. |
+
+(Ghi chú: tỷ lệ mang tính chủ quan dựa trên price action + volume; thiếu dữ liệu OI/funding làm tăng bất định).
+
+4) Gợi ý điểm vào – ra (Quản trị rủi ro định lượng)
+- Tham chiếu ATR(14) (4H) ước tính: ~46 USD (tính trung bình range high-low 14 nến gần nhất).
+  - 1.5x ATR ≈ 69 USD; 2x ATR ≈ 92 USD → dùng làm bước dời SL.
+
+Long Setup:
+- Entry (mua): vùng giá 2,510 – 2,540 (ưu tiên mua lùi gần hỗ trợ 2,516 hoặc mua breakout có volume > trung bình trên 2,550)
+- Stop Loss: đặt cách hỗ trợ gần nhất 1.5x–2x ATR xuống dưới (ví dụ nếu mua tại 2,520 và Hỗ trợ 1 = 2,516 → SL = 2,516 − 69 = 2,447 (1.5x) hoặc 2,424 (2x))
+- Take Profit:
+  - TP1: 2,550 (chốt 50%)
+  - TP2: 2,626–2,687 (chốt 50%)
+- Khi TP1 đạt → dời SL về hòa vốn (break-even).
+
+Short Setup:
+- Entry (bán khống): vùng giá 2,550–2,570 (nếu test thất bại, rejection vùng kháng cự) hoặc bán khi thủng 2,475 (breakout xuống)
+- Stop Loss: 1.5x–2x ATR trên kháng cự gần nhất (ví dụ entry short ở 2,560, KL trên kháng cự 2,626 → SL = 2,626 + 69 = 2,695 (1.5x) hoặc +92 = 2,718)
+- Take Profit:
+  - TP1: 2,516 (chốt 50%)
+  - TP2: 2,475 / vùng thấp mạnh (chốt 50%)
+- Khi TP1 đạt → dời SL về hòa vốn.
+
+(Lưu ý: khoảng cách SL tính theo ATR dẫn tới SL lớn so với giá; điều chỉnh kích thước vị thế (position sizing) để rủi ro tuyệt đối phù hợp tài khoản).
+
+5) Tổng hợp chiến lược
+
+| Khung | Hỗ trợ | Kháng cự | Xu hướng | Kịch bản chính | Kịch bản phụ |
+| ----- | ------ | -------- | -------- | -------------- | ------------ |
+| 4H    | 2,516; 2,475 | 2,550; 2,626–2,687 | Hơi tiêu cực / side-ways | Tiếp tục dò đáy → test 2,475 (60%) | Hồi kỹ thuật phá 2,550 rồi lên 2,626+ nếu volume/OI ủng hộ (40%) |
+
+6) Gợi ý hành động (24–72h)
+- Trader ngắn hạn: tập trung theo dõi vùng 2,503–2,562 (hỗ trợ 1 → kháng cự 1). Hành động:
+  - Mua lướt near-support nếu có phản ứng bật tăng kèm volume ≥120% trung bình 20 kỳ.
+  - Mở long breakout chỉ khi phá 2,550 rõ ràng và volume xác nhận (≥120% avg).
+  - Nếu giá phá 2,475 với volume cao → ưu tiên short / thoát long.
+- Funding Rate / OI không có → cảnh giác rủi ro ẩn (ví dụ: nếu thực tế funding cao, có thể xảy ra short squeeze; nếu OI tăng mạnh khi giá giảm có thể là ép long). Vì vậy trade nhỏ hơn bình thường hoặc chờ data OI/funding.
+- Quy tắc vào lệnh: chỉ vào lệnh khi có một trong hai điều kiện:
+  - Rejection/Pinbar/Engulfing rõ ràng trên support/kháng cự + volume ≥120% trung bình 20 kỳ; hoặc
+  - Breakout có volume ≥120% trung bình 20 kỳ.
+- Position sizing: SL theo 1.5–2x ATR; tùy biến kích thước sao cho rủi ro tối đa trên giao dịch < 1–2% vốn.
+
+Kết luận ngắn gọn:
+- Áp lực giảm ngắn hạn vẫn chiếm ưu thế (cấu trúc lower highs/lower lows), khả năng cao test lại 2,475 trong 24–72h nếu không có volume hỗ trợ hồi. Hồi kỹ thuật có thể xảy ra nhưng cần volume lớn để tin cậy. Thiếu dữ liệu OI/funding làm giảm độ chắc chắn — ưu tiên chờ xác nhận volume trước khi vào lệnh.
+
+Nếu muốn, tôi có thể:
+- Tính RSI/MACD/EMA thực tế trên dãy nến 4H bạn cung cấp và vẽ các mức chính xác hơn.
+- So sánh với khung 1H/1D để hoàn thiện multi-timeframe.
